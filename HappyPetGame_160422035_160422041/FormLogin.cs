@@ -25,39 +25,6 @@ namespace HappyPetGame_160422035_160422041
             // TODO: Cek dan load file
             try
             {
-                /*
-                BinaryFormatter binaryFormatter = new BinaryFormatter();
-
-                //! Jika ada
-                if (File.Exists(GameUtils.DB_FILE))
-                {
-                    FileStream fileStream = new FileStream(
-                            GameUtils.DB_FILE,
-                            FileMode.Open,
-                            FileAccess.Read
-                        );
-
-
-                    listOfPlayers = binaryFormatter.Deserialize(fileStream) as List<Player>;
-
-                    fileStream.Close();
-                }
-                //! Jika tidak ada, maka kita buat baru dan asumsikan bahwa blm ada player yang terdaftar
-                else
-                {
-                    FileStream fileStream = new FileStream(
-                            GameUtils.DB_FILE,
-                            FileMode.Create,
-                            FileAccess.Write
-                        );
-
-                    binaryFormatter.Serialize(fileStream, listOfPlayers);
-
-                    fileStream.Close();
-
-                }
-                */
-
                 GameUtils.LoadData(out listOfPlayers);
             }
             catch (Exception x)

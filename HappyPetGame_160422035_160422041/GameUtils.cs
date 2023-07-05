@@ -57,7 +57,7 @@ namespace HappyPetGame_160422035_160422041
             }
             catch (Exception x)
             {
-                throw new ArgumentException(x.Message);
+                throw x;
             }
         }
 
