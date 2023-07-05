@@ -69,6 +69,7 @@
     <Compile Include="FormSignUp.Designer.cs">
       <DependentUpon>FormSignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameUtils.cs" />
     <Compile Include="Pet.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
@@ -76,6 +77,9 @@
     <Compile Include="Toy.cs" />
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSignUp.resx">
+      <DependentUpon>FormSignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

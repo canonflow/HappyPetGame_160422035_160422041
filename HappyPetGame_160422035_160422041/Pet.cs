@@ -6,6 +6,7 @@ using System.Text;
 
 namespace HappyPetGame_160422035_160422041
 {
+    [Serializable]
     public abstract class Pet
     {
         #region FIELDS
