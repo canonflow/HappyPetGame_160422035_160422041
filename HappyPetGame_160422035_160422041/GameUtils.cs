@@ -14,6 +14,7 @@ namespace HappyPetGame_160422035_160422041
         #region FIELDS
         public static readonly string DB_FILE = "players_db.dat";
         private static Player currentPlayer = null;
+        private static List<Player> listPlayers = LoadData();
         #endregion
 
         #region PROPERTIES
@@ -27,10 +28,10 @@ namespace HappyPetGame_160422035_160422041
             return currentPlayer;
         }
 
-        // TODO: Buat Load Data players
-        public static bool LoadData(out List<Player> listPlayers)
+        // TODO: Buat Load Data players (Bisa diambil di Form jika dibutuhkan)
+        public static List<Player> LoadData()
         {
-            listPlayers = new List<Player>();
+            List<Player> listPlayers = new List<Player>();
             // TODO: Cek dan load file
             try
             {
@@ -50,7 +51,7 @@ namespace HappyPetGame_160422035_160422041
 
                     fileStream1.Close();
 
-                    return true;
+                    return listPlayers;
                 }
 
                 //! Jika tidak ada, maka kita buat baru dan asumsikan bahwa blm ada player yang terdaftar
@@ -64,7 +65,7 @@ namespace HappyPetGame_160422035_160422041
 
                 fileStream.Close();
 
-                return false;
+                return listPlayers;
                
             }
             catch (Exception x)
@@ -73,8 +74,8 @@ namespace HappyPetGame_160422035_160422041
             }
         }
 
-        // TODO: Buat Nyimpen Data Player
-        public static void SaveData(List<Player> listPlayers)
+        // TODO: Buat Nyimpen Data Player, digunakan pada saat SignUp dan UpdateCurrentPlayer
+        public static void SaveData()
         {
             try
             {
@@ -100,25 +101,21 @@ namespace HappyPetGame_160422035_160422041
         // TODO: Update state, dipake di dalam method SaveData
         public static void UpdateCurrentPlayer(Player currPlayer)
         {
-            //! Ambil data semua player
-            List<Player> players;
-            LoadData(out players);
-
-            for (int cnt = 0; cnt < players.Count; cnt++)
+            for (int cnt = 0; cnt < listPlayers.Count; cnt++)
             {
-                if (players[cnt].Username == currentPlayer.Username)
+                if (listPlayers[cnt].Username == currentPlayer.Username)
                 {
-                    players[cnt] = currentPlayer;
+                    listPlayers[cnt] = currentPlayer;
                 }
             }
 
-            SaveData(players);
+            SaveData();
         }
 
         // TODO: Buat login, kalo berhasil fields currentPlayer diisi dengan player yang berhasil login
-        public static bool Login(string username, FormLogin form)
+        public static bool Login(string username)
         {
-            foreach (Player player in form.listOfPlayers)
+            foreach (Player player in listPlayers)
             {
                 if (player.Username == username)
                 {
@@ -131,9 +128,9 @@ namespace HappyPetGame_160422035_160422041
         }
 
         // TODO: Buat signup, bikin player baru denga username yang unique (YANG BELUM TERDAFTAR)
-        public static bool SignUp(string username, FormSignUp form)
+        public static bool SignUp(string username)
         {
-            foreach (Player player in form.listOfPlayers)
+            foreach (Player player in listPlayers)
             {
                 if (player.Username == username)
                 {
@@ -143,19 +140,21 @@ namespace HappyPetGame_160422035_160422041
 
             //! Create new Player and add it to listOfPlayer in form signUp
             Player newPlayer = new Player(username);
-            form.listOfPlayers.Add(newPlayer);
+            //form.listOfPlayers.Add(newPlayer);
+            listPlayers.Add(newPlayer);
 
             //! Save File
-            SaveData(form.listOfPlayers);
+            SaveData();
 
             return true;
         }
 
-        //TODO: Buat Sign Out player
+        //TODO: Buat Sign Out player, skalian update Player di list agar kesimpan
         public static bool SignOut()
         {
             if (currentPlayer != null)
             {
+                UpdateCurrentPlayer(currentPlayer);
                 currentPlayer = null;
                 return true;
             }

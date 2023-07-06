@@ -21,6 +21,7 @@ namespace HappyPetGame_160422035_160422041
 
         private void FormSignUp_Load(object sender, EventArgs e)
         {
+            /*
             try
             {
                 GameUtils.LoadData(out listOfPlayers);
@@ -29,6 +30,7 @@ namespace HappyPetGame_160422035_160422041
             {
                 MessageBox.Show(x.Message);
             }
+            */
         }
 
         private void buttonSignup_Click(object sender, EventArgs e)
@@ -38,7 +40,7 @@ namespace HappyPetGame_160422035_160422041
                 //! User input
                 string username = textBoxUsername.Text;
 
-                if (GameUtils.SignUp(username, this))
+                if (GameUtils.SignUp(username))
                 {
                     MessageBox.Show("Berhasil Membuat Player");
                 }    
