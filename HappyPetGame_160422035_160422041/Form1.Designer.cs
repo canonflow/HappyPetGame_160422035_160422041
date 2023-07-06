@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxCoin = new System.Windows.Forms.TextBox();
             this.buttonUpdateCoin = new System.Windows.Forms.Button();
+            this.buttonSignOut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelPlayerUsername
@@ -71,7 +72,7 @@
             // 
             // buttonUpdateCoin
             // 
-            this.buttonUpdateCoin.Location = new System.Drawing.Point(314, 215);
+            this.buttonUpdateCoin.Location = new System.Drawing.Point(325, 214);
             this.buttonUpdateCoin.Name = "buttonUpdateCoin";
             this.buttonUpdateCoin.Size = new System.Drawing.Size(75, 23);
             this.buttonUpdateCoin.TabIndex = 4;
@@ -79,11 +80,22 @@
             this.buttonUpdateCoin.UseVisualStyleBackColor = true;
             this.buttonUpdateCoin.Click += new System.EventHandler(this.buttonUpdateCoin_Click);
             // 
+            // buttonSignOut
+            // 
+            this.buttonSignOut.Location = new System.Drawing.Point(313, 295);
+            this.buttonSignOut.Name = "buttonSignOut";
+            this.buttonSignOut.Size = new System.Drawing.Size(88, 27);
+            this.buttonSignOut.TabIndex = 5;
+            this.buttonSignOut.Text = "SignOut";
+            this.buttonSignOut.UseVisualStyleBackColor = true;
+            this.buttonSignOut.Click += new System.EventHandler(this.buttonSignOut_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonSignOut);
             this.Controls.Add(this.buttonUpdateCoin);
             this.Controls.Add(this.textBoxCoin);
             this.Controls.Add(this.label1);
@@ -104,6 +116,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxCoin;
         private System.Windows.Forms.Button buttonUpdateCoin;
+        private System.Windows.Forms.Button buttonSignOut;
     }
 }
 

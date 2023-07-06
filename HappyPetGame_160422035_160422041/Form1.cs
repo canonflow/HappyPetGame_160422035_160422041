@@ -40,5 +40,17 @@ namespace HappyPetGame_160422035_160422041
             GameUtils.UpdateCurrentPlayer(player);
             UpdatePlayerInformation();
         }
+
+        private void buttonSignOut_Click(object sender, EventArgs e)
+        {
+            FormLogin formLogin = new FormLogin();
+
+            GameUtils.SignOut();
+
+            this.Hide();
+            formLogin.ShowDialog();
+            this.Close();
+
+        }
     }
 }
