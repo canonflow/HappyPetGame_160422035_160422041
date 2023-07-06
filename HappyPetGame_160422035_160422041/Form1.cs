@@ -23,6 +23,24 @@ namespace HappyPetGame_160422035_160422041
             GameUtils.LoadData(out listOfPlayers);
 
             labelPlayerUsername.Text = GameUtils.player().Username;
+            labelCoin.Text = GameUtils.player().Coins.ToString();
+        }
+
+
+        private void UpdatePlayerInformation()
+        {
+            labelPlayerUsername.Text = GameUtils.player().Username;
+            labelCoin.Text = GameUtils.player().Coins.ToString();
+        }
+
+        private void buttonUpdateCoin_Click(object sender, EventArgs e)
+        {
+            int coin = int.Parse(textBoxCoin.Text);
+            Player player = GameUtils.player();
+            player.Coins += coin;
+
+            GameUtils.UpdateCurrentPlayer(player);
+            UpdatePlayerInformation();
         }
     }
 }

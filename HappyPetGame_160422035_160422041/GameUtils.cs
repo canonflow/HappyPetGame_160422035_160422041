@@ -13,7 +13,7 @@ namespace HappyPetGame_160422035_160422041
     {
         #region FIELDS
         public static readonly string DB_FILE = "players_db.dat";
-        private static Player currentPlayer;
+        private static Player currentPlayer = null;
         #endregion
 
         #region PROPERTIES
@@ -23,6 +23,7 @@ namespace HappyPetGame_160422035_160422041
         // TODO: Buat ambil player yang berhasil login
         public static Player player()
         {
+            if (currentPlayer == null) throw new ArgumentException("No player is currently logged in.");
             return currentPlayer;
         }
 
@@ -88,11 +89,30 @@ namespace HappyPetGame_160422035_160422041
                 binaryFormatter.Serialize(fileStream, listPlayers);
 
                 fileStream.Close();
+
             }
             catch (Exception x)
             {
                 throw x;
             }
+        }
+
+        // TODO: Update state, dipake di dalam method SaveData
+        public static void UpdateCurrentPlayer(Player currPlayer)
+        {
+            //! Ambil data semua player
+            List<Player> players;
+            LoadData(out players);
+
+            for (int cnt = 0; cnt < players.Count; cnt++)
+            {
+                if (players[cnt].Username == currentPlayer.Username)
+                {
+                    players[cnt] = currentPlayer;
+                }
+            }
+
+            SaveData(players);
         }
 
         // TODO: Buat login, kalo berhasil fields currentPlayer diisi dengan player yang berhasil login
@@ -129,6 +149,19 @@ namespace HappyPetGame_160422035_160422041
             SaveData(form.listOfPlayers);
 
             return true;
+        }
+
+        //TODO: Buat Sign Out player
+        public static bool SignOut()
+        {
+            if (currentPlayer != null)
+            {
+                currentPlayer = null;
+                return true;
+            }
+
+            //! Ketika tidak ada player yang login tetapi maksa buat signout
+            return false;
         }
         #endregion
     }
