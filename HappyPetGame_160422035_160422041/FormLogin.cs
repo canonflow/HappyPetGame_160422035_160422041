@@ -23,6 +23,7 @@ namespace HappyPetGame_160422035_160422041
         private void FormLogin_Load(object sender, EventArgs e)
         {
             // TODO: Cek dan load file
+            /*
             try
             {
                 GameUtils.LoadData(out listOfPlayers);
@@ -31,6 +32,7 @@ namespace HappyPetGame_160422035_160422041
             {
                 MessageBox.Show(x.Message);
             }
+            */
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
@@ -42,7 +44,7 @@ namespace HappyPetGame_160422035_160422041
                 string username = textBoxUsername.Text;
 
                 //! Login
-                if (GameUtils.Login(username, this))
+                if (GameUtils.Login(username))
                 {
                     MessageBox.Show("Berhasil Login");
                     Form1 form = new Form1();
