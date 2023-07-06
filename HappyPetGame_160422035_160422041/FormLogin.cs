@@ -45,6 +45,10 @@ namespace HappyPetGame_160422035_160422041
                 if (GameUtils.Login(username, this))
                 {
                     MessageBox.Show("Berhasil Login");
+                    Form1 form = new Form1();
+                    this.Hide();
+                    form.ShowDialog();
+                    this.Close();
                 }
             }
             catch (Exception x)

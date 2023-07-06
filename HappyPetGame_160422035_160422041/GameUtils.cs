@@ -13,9 +13,20 @@ namespace HappyPetGame_160422035_160422041
     {
         #region FIELDS
         public static readonly string DB_FILE = "players_db.dat";
+        private static Player currentPlayer;
+        #endregion
+
+        #region PROPERTIES
         #endregion
 
         #region METHODS
+        // TODO: Buat ambil player yang berhasil login
+        public static Player player()
+        {
+            return currentPlayer;
+        }
+
+        // TODO: Buat Load Data players
         public static bool LoadData(out List<Player> listPlayers)
         {
             listPlayers = new List<Player>();
@@ -61,6 +72,7 @@ namespace HappyPetGame_160422035_160422041
             }
         }
 
+        // TODO: Buat Nyimpen Data Player
         public static void SaveData(List<Player> listPlayers)
         {
             try
@@ -83,12 +95,14 @@ namespace HappyPetGame_160422035_160422041
             }
         }
 
+        // TODO: Buat login, kalo berhasil fields currentPlayer diisi dengan player yang berhasil login
         public static bool Login(string username, FormLogin form)
         {
             foreach (Player player in form.listOfPlayers)
             {
                 if (player.Username == username)
                 {
+                    currentPlayer = player;
                     return true;
                 }
             }
@@ -96,6 +110,7 @@ namespace HappyPetGame_160422035_160422041
             throw new ArgumentException("Username not available!");
         }
 
+        // TODO: Buat signup, bikin player baru denga username yang unique (YANG BELUM TERDAFTAR)
         public static bool SignUp(string username, FormSignUp form)
         {
             foreach (Player player in form.listOfPlayers)
