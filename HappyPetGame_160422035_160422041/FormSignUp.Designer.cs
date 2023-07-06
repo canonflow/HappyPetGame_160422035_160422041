@@ -80,6 +80,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxUsername);
             this.Name = "FormSignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSignUp";
             this.Load += new System.EventHandler(this.FormSignUp_Load);
             this.ResumeLayout(false);
