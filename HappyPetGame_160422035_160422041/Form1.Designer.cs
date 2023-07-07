@@ -44,47 +44,44 @@
             this.labelCoin.AutoSize = true;
             this.labelCoin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(20)))), ((int)(((byte)(37)))));
             this.labelCoin.ForeColor = System.Drawing.Color.White;
-            this.labelCoin.Location = new System.Drawing.Point(100, 50);
-            this.labelCoin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCoin.Location = new System.Drawing.Point(133, 62);
             this.labelCoin.Name = "labelCoin";
-            this.labelCoin.Size = new System.Drawing.Size(35, 13);
+            this.labelCoin.Size = new System.Drawing.Size(44, 16);
             this.labelCoin.TabIndex = 0;
             this.labelCoin.Text = "label1";
             // 
             // labelPlayerUsername
             // 
             this.labelPlayerUsername.AutoSize = true;
-            this.labelPlayerUsername.Location = new System.Drawing.Point(259, 74);
-            this.labelPlayerUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPlayerUsername.Location = new System.Drawing.Point(345, 91);
             this.labelPlayerUsername.Name = "labelPlayerUsername";
-            this.labelPlayerUsername.Size = new System.Drawing.Size(35, 13);
+            this.labelPlayerUsername.Size = new System.Drawing.Size(44, 16);
             this.labelPlayerUsername.TabIndex = 1;
             this.labelPlayerUsername.Text = "label1";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(202, 74);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(269, 91);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.Size = new System.Drawing.Size(40, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Coin: ";
             // 
             // textBoxCoin
             // 
-            this.textBoxCoin.Location = new System.Drawing.Point(235, 142);
-            this.textBoxCoin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCoin.Location = new System.Drawing.Point(313, 175);
+            this.textBoxCoin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCoin.Name = "textBoxCoin";
-            this.textBoxCoin.Size = new System.Drawing.Size(76, 20);
+            this.textBoxCoin.Size = new System.Drawing.Size(100, 22);
             this.textBoxCoin.TabIndex = 3;
             // 
             // buttonUpdateCoin
             // 
-            this.buttonUpdateCoin.Location = new System.Drawing.Point(244, 174);
-            this.buttonUpdateCoin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonUpdateCoin.Location = new System.Drawing.Point(325, 214);
+            this.buttonUpdateCoin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonUpdateCoin.Name = "buttonUpdateCoin";
-            this.buttonUpdateCoin.Size = new System.Drawing.Size(56, 19);
+            this.buttonUpdateCoin.Size = new System.Drawing.Size(75, 23);
             this.buttonUpdateCoin.TabIndex = 4;
             this.buttonUpdateCoin.Text = "Update Coin";
             this.buttonUpdateCoin.UseVisualStyleBackColor = true;
@@ -92,10 +89,10 @@
             // 
             // buttonSignOut
             // 
-            this.buttonSignOut.Location = new System.Drawing.Point(235, 240);
-            this.buttonSignOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSignOut.Location = new System.Drawing.Point(313, 295);
+            this.buttonSignOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSignOut.Name = "buttonSignOut";
-            this.buttonSignOut.Size = new System.Drawing.Size(66, 22);
+            this.buttonSignOut.Size = new System.Drawing.Size(88, 27);
             this.buttonSignOut.TabIndex = 5;
             this.buttonSignOut.Text = "SignOut";
             this.buttonSignOut.UseVisualStyleBackColor = true;
@@ -104,7 +101,8 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(160, 60);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -113,9 +111,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonSignOut);
             this.Controls.Add(this.buttonUpdateCoin);
             this.Controls.Add(this.textBoxCoin);
@@ -123,7 +121,8 @@
             this.Controls.Add(this.labelPlayerUsername);
             this.Controls.Add(this.labelCoin);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
