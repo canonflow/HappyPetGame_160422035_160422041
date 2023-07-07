@@ -69,7 +69,7 @@
     <Compile Include="FormSignUp.Designer.cs">
       <DependentUpon>FormSignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameUtils.cs" />
+    <Compile Include="Auth.cs" />
     <Compile Include="Pet.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
