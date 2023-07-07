@@ -40,7 +40,7 @@ namespace HappyPetGame_160422035_160422041
                 //! User input
                 string username = textBoxUsername.Text;
 
-                if (GameUtils.SignUp(username))
+                if (Auth.SignUp(username))
                 {
                     MessageBox.Show("Berhasil Membuat Player");
                 }    

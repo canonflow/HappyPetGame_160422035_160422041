@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HappyPetGame_160422035_160422041
 {
-    public static class GameUtils
+    public static class Auth
     {
         #region FIELDS
         public static readonly string DB_FILE = "players_db.dat";

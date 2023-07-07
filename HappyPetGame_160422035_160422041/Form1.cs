@@ -20,24 +20,24 @@ namespace HappyPetGame_160422035_160422041
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            labelCoin.Text = GameUtils.player().Coins.ToString();
-            labelPlayerUsername.Text = GameUtils.player().Username;
+            labelCoin.Text = Auth.player().Coins.ToString();
+            labelPlayerUsername.Text = Auth.player().Username;
         }
 
 
         private void UpdatePlayerInformation()
         {
-            labelCoin.Text = GameUtils.player().Coins.ToString();
-            labelPlayerUsername.Text = GameUtils.player().Username;
+            labelCoin.Text = Auth.player().Coins.ToString();
+            labelPlayerUsername.Text = Auth.player().Username;
         }
 
         private void buttonUpdateCoin_Click(object sender, EventArgs e)
         {
             int coin = int.Parse(textBoxCoin.Text);
-            Player player = GameUtils.player();
+            Player player = Auth.player();
             player.Coins += coin;
 
-            GameUtils.UpdateCurrentPlayer(player);
+            Auth.UpdateCurrentPlayer(player);
             UpdatePlayerInformation();
             textBoxCoin.Text = "";
         }
@@ -46,7 +46,7 @@ namespace HappyPetGame_160422035_160422041
         {
             FormLogin formLogin = new FormLogin();
 
-            GameUtils.SignOut();
+            Auth.SignOut();
 
             this.Hide();
             formLogin.ShowDialog();

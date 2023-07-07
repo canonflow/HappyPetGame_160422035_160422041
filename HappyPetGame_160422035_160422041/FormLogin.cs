@@ -44,7 +44,7 @@ namespace HappyPetGame_160422035_160422041
                 string username = textBoxUsername.Text;
 
                 //! Login
-                if (GameUtils.Login(username))
+                if (Auth.Login(username))
                 {
                     MessageBox.Show("Berhasil Login");
                     Form1 form = new Form1();
