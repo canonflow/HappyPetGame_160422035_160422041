@@ -117,38 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="mapFinalBener 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mapFinalBener 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mapFinalBener 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mapFinalBener 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="test_gambar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\test_gambar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mapTest_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mapTest_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mapTest_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mapTest_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mapTest_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mapTest_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="map2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\map2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="map3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\map3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mapZoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mapZoom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mapFinalBener 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mapFinalBener 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Loading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="smoke.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODdhCgAeAHcAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJCgAAACwAAAAACgAeAIAAAADAy9wCEoSP
+        qcvtD6OctNqLs86hrx5EBQAh+QQJCgAAACwCABcABwAHAIEAAAD////Ay9wAAAACDISPqRDdJpyAos5V
+        AAAh+QQJCgAAACwCABAABwAOAIEAAAD////Ay9wAAAACE4SPqcutAQ+cQEwo8sy8V29wRgEAIfkECQoA
+        AAAsAQALAAkAEQCBAAAA////wMvcAAAAAh2Ej6nLfQETnEdMCoS9RntbfYgWaFKUWILiOSxSAAAh+QQJ
+        CgAAACwBAAoACQAQAIEAAAD////Ay9wAAAACIISPFpvrJ9wSQEQ5LQ6261B5liGOpJd0yYow6ZSqMVIA
+        ACH5BAkKAAAALAIACQAHAA8AgQAAAP///8DL3AAAAAIYhH+hqSvdxIuySmCFyaeiDyJLF2jddR4FACH5
+        BAkKAAAALAIACAAHAA4AgQAAAP///8DL3AAAAAIWhH+hqSuthGyyWmDFqaj7jyxh0ElGAQAh+QQJCgAA
+        ACwCAAcABwAOAIEAAAD////Ay9wAAAACF4R/oakrrcSDcoaKJcinog8iAbggGlAAACH5BAkKAAAALAIA
+        BQAHAA8AgQAAAP///8DL3AAAAAIXhI8JwcdvXhNCBoprxmAfroSJMFLjUQAAIfkECQoAAAAsAwAEAAUA
+        DgCBAAAA////wMvcAAAAAhGEHwnJHSISnBSCebLe2RpfAAAh+QQJCgAAACwDAAMABQANAIEAAAD////A
+        y9wAAAACEoQfYZnAKpIAokYbaT28+z4BBQAh+QQJCgAAACwCAAIABgAHAIEAAAD////Ay9wAAAACDYRv
+        EaeaKpaYEdBpKCgAIfkECQoAAAAsAQABAAYAHACBAAAA////wMvcAAAAAhaEbxGnmi2AUCLWazDavPsP
+        huJIlmIBACH5BAkKAAAALAEAAAAHAB0AgQAAAP///8DL3AAAAAIXhG8RqCGnxDtyUoSz3rz7D4biSGoV
+        chYAIfkECQoAAAAsAAAAAAkAHgCBAAAA////wMvcAAAAAhsEYmkRoibig7Pai7PevPsPhqLGlIpQOknE
+        YgUAIfkECQoAAAAsAAAAAAkAHgCBAAAA////wMvcAAAAAiFMgAkhotmenLTai7PevPtvGYciGlDJII0Y
+        Ac3buvDzIgUAIfkECQoAAAAsAQAAAAkAHACBAAAAwMvc////AAAAAiMMjqnL7Q+jnLQ+gRXeKGwOBN53
+        iKbXnYkoiFqmeEbsUvNRAAAh+QQJCgAAACwBAAoACQAQAIEAAAD////Ay9wAAAACIISPFpvrJ9wSQEQ5
+        LQ6261B5liGOpJd0yYow6ZSqMVIAACH5BAkKAAAALAIACQAHAA8AgQAAAP///8DL3AAAAAIYhH+hqSvd
+        xIuySmCFyaeiDyJLF2jddR4FACH5BAkKAAAALAIACAAHAA4AgQAAAP///8DL3AAAAAIWhH+hqSuthGyy
+        WmDFqaj7jyxh0ElGAQAh+QQJCgAAACwCAAcABwAOAIEAAAD////Ay9wAAAACF4R/oakrrcSDcoaKJcin
+        og8iAbggGlAAACH5BAkKAAAALAIABQAHAA8AgQAAAP///8DL3AAAAAIXhI8JwcdvXhNCBoprxmAfroSJ
+        MFLjUQAAIfkECQoAAAAsAwAEAAUADgCBAAAA////wMvcAAAAAhGEHwnJHSISnBSCebLe2RpfAAAh+QQJ
+        CgAAACwDAAMABQANAIEAAAD////Ay9wAAAACEoQfYZnAKpIAokYbaT28+z4BBQAh+QQJCgAAACwCAAIA
+        BgAHAIEAAAD////Ay9wAAAACDYRvEaeaKpaYEdBpKCgAIfkECQoAAAAsAQABAAYABwCBAAAA////wMvc
+        AAAAAg2EbxGnmi2AUCLWa3ABACH5BAkKAAAALAEAAAAEAAYAgQAAAP///8DL3AAAAAIKhB0BGZIiAIwS
+        FAAh+QQJCgAAACwAAAAABAAEAIEAAAD////Ay9wAAAACBwRiEQLixgoAIfkECQoAAAAsAAAAAAMAAwCB
+        AAAA////wMvcAAAAAgVMECKgBQAh+QQJCgAAACwBAAAAAQABAIAAAADAy9wCAkwBADs=
+</value>
   </data>
 </root>

@@ -47,9 +47,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bird.cs" />
+    <Compile Include="Boundary.cs" />
     <Compile Include="Cat.cs" />
     <Compile Include="Chameleon.cs" />
+    <Compile Include="Coba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coba.Designer.cs">
+      <DependentUpon>Coba.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dog.cs" />
+    <Compile Include="Exp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exp.Designer.cs">
+      <DependentUpon>Exp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fish.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -70,11 +83,42 @@
       <DependentUpon>FormSignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Auth.cs" />
+    <Compile Include="GameUtils.cs" />
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map1Point.cs" />
+    <Compile Include="Map2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map2.Designer.cs">
+      <DependentUpon>Map2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map2Point.cs" />
+    <Compile Include="Map3Point.cs" />
+    <Compile Include="MapBoundary.cs" />
+    <Compile Include="MapPoint.cs" />
     <Compile Include="Pet.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Testing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing.Designer.cs">
+      <DependentUpon>Testing.cs</DependentUpon>
+    </Compile>
     <Compile Include="Toy.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="Coba.resx">
+      <DependentUpon>Coba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exp.resx">
+      <DependentUpon>Exp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +128,12 @@
     <EmbeddedResource Include="FormSignUp.resx">
       <DependentUpon>FormSignUp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map2.resx">
+      <DependentUpon>Map2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -92,7 +142,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Testing.resx">
+      <DependentUpon>Testing.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ClassDiagramHappyPetGame.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -106,6 +160,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapZoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test_gambar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapTest_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapTest_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapTest_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapFinalBener 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapFinalBener 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapFinalBener 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
