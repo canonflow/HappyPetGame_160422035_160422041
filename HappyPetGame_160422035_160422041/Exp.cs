@@ -154,6 +154,7 @@ namespace HappyPetGame_160422035_160422041
             Invoke(new Action(() => listOfMapPoints = new List<MapPoint>()));
         }
 
+        #region GAME TIMER
         private async void timer1_Tick(object sender, EventArgs e)
         {
             //TODO: Bersihin Boundaries karena ada perpindahan MAP
@@ -330,6 +331,7 @@ namespace HappyPetGame_160422035_160422041
             }
             #endregion
         }
+        #endregion
 
         #region GAME KEY DOWN
         private void Exp_KeyDown(object sender, KeyEventArgs e)

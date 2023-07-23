@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 
 namespace HappyPetGame_160422035_160422041
 {
@@ -26,9 +27,20 @@ namespace HappyPetGame_160422035_160422041
             MAP_3_ID = 1879
 
         }
+        public static readonly Dictionary<int, string> TypeID = new Dictionary<int, string>
+        {
+            { 0, "Fire" },
+            { 1, "Ice" },
+            { 2, "Metal" },
+            { 3, "Wind" },
+            { 4, "Earth" },
+            { 5, "Lightning" },
+            { 6, "Water" },
+        };
         public static readonly int PLAYER_MOVEMENT = 3;
         public static readonly int MARGIN_ERROR = 3;
         public static readonly Point START_BACKGROUND_LOCATION = new Point(-80, -300);
+        public static readonly Point USER_STARTING_POINT_BEGIN = new Point(200, 200);
         private static Dictionary<char, Dictionary<string, bool>> keys = new Dictionary<char, Dictionary<string, bool>>
         {
             { 'W', new Dictionary<string, bool> { { "pressed", false } }  },
@@ -38,6 +50,45 @@ namespace HappyPetGame_160422035_160422041
             { 'F', new Dictionary<string, bool> { { "pressed", false } }  }
         };
         public static readonly int SIZE_BOUNDARY = 16;
+        public static readonly List<Skill> LIST_OF_SKILLS = new List<Skill>
+        {
+            new Skill("Frostbite", 1, 50),
+            new Skill("Flamestrike", 0, 65),
+            new Skill("Tempest", 3, 55),
+            new Skill("Quake", 4, 60),
+            new Skill("Thunderbold", 5, 70),
+            new Skill("Aqua Burst", 6, 45),
+            new Skill("Molten Barrage", 0, 70),
+            new Skill("Blizzard", 1, 75),
+            new Skill("Metal Slash", 2, 80),
+            new Skill("Galeforce", 3, 65),
+            new Skill("Terraquake", 4, 75),
+            new Skill("Shockwave", 5, 80),
+            new Skill("Hydro Canon", 6, 75),
+            new Skill("Emberstorm", 0, 60),
+            new Skill("Flamestrike", 0, 65),
+            new Skill("Icicle Spear", 1, 55),
+            new Skill("Steel Cyclone", 2, 70),
+            new Skill("Wind Dance", 3, 50),
+            new Skill("Stone Crush", 4, 65),
+            new Skill("Lightning Serpent", 5, 75),
+            new Skill("Tsunami", 6, 80)
+        };
+        public static readonly int SKILL_DAMAGE_FOR_UPGRADE = 5;
+        public static readonly int ULTIMATE_FOR_UPGRADE = 10;
+        public static readonly int HP_UPGRADE = 50;
+        public static readonly int ENEMY_HP_UPGRADE = 100;
+        public static readonly int ENEMY_DAMAGE_UPGRADE = 10;
+        public static readonly int ENEMY_ULTI_UPGRADE = 10;
+        public static readonly int BASE_ASIMOLE_HP = 600;
+        public static readonly int BASE_ASIMOLE_DAMAGE = 50;
+        public static readonly int BASE_ASIMOLE_ULTI = 100;
+        public static readonly int BASE_BARREL_HP = 400;
+        public static readonly int BASE_BARREL_DAMAGE = 90;
+        public static readonly int BASE_BARREL_ULTI = 165;
+        public static readonly int BASE_DEMON_POT_HP = 510;
+        public static readonly int BASE_DEMON_POT_DAMAGE = 70;
+        public static readonly int BASE_DEMON_POT_ULTI = 130;
         /// <summary>
         /// Dari -> Kemana
         /// </summary>
@@ -69,8 +120,9 @@ namespace HappyPetGame_160422035_160422041
             return UserTransitionLocation[from.ToString()][to.ToString()];
         }
         //! setTimeout kayak di JS
-        public static void SetTimeout(Action callback, int interval = 1000)
+        public static async Task SetTimeout(Action callback, int interval = 1000)
         {
+            /*
             Timer timer = new Timer();
             timer.Interval = interval;
             timer.Tick += delegate (object sender, EventArgs args)
@@ -81,6 +133,9 @@ namespace HappyPetGame_160422035_160422041
             };
 
             timer.Start();
+            */
+            await Task.Delay(interval);
+            callback();
         }
 
         public static async Task AnimateWithMovement(Action callback, int duration = 100, int interval = 1, bool timerStop = true)

@@ -139,7 +139,7 @@ namespace HappyPetGame_160422035_160422041
             }
 
             //! Create new Player and add it to listOfPlayer in form signUp
-            Player newPlayer = new Player(username);
+            Player newPlayer = new Player(username, new Cat(), new BattlePet());
             //form.listOfPlayers.Add(newPlayer);
             listPlayers.Add(newPlayer);
 

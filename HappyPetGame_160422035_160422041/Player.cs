@@ -17,10 +17,16 @@ namespace HappyPetGame_160422035_160422041
         private List<Player> listOfFriends;
         private List<Player> listOfRequested;
         private int petDefenderPoint;
+
+        private int points;
+        private int totalWin;
+        private User playerUser;
+        private Pet pet;
+        private BattlePet battlePet;
         #endregion
 
         #region CONSTRUCTOR
-        public Player(string username)
+        public Player(string username, Pet pet, BattlePet battlePet)
         {
             this.Username = username;
             this.lastPlay = DateTime.Now;
@@ -28,7 +34,11 @@ namespace HappyPetGame_160422035_160422041
             this.listOfFriends = new List<Player>();
             this.ListOfRequested = new List<Player>();
             this.PetDefenderPoint = 0;
-            
+            this.Points = 0;
+            this.TotalWin = 0;
+            this.PlayerUser = new User(GameUtils.USER_STARTING_POINT_BEGIN);
+            this.Pet = pet;
+            this.BattlePet = battlePet;
         }
         #endregion
 
@@ -53,6 +63,13 @@ namespace HappyPetGame_160422035_160422041
         public List<Player> ListOfFriends { get => listOfFriends; set => listOfFriends = value; }
         public List<Player> ListOfRequested { get => listOfRequested; set => listOfRequested = value; }
         public int PetDefenderPoint { get => petDefenderPoint; set => petDefenderPoint = value; }
+
+        public int Points { get => points; set => points = value; }
+        public int TotalWin { get => totalWin; set => totalWin = value; }
+
+        public User PlayerUser { get => playerUser; set => playerUser = value; }
+        public Pet Pet { get => pet; set => pet = value; }
+        public BattlePet BattlePet { get => battlePet; set => battlePet = value; }
         #endregion
 
         #region METHODS

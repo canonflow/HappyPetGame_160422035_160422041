@@ -13,6 +13,7 @@ namespace HappyPetGame_160422035_160422041
         #region FIELDS
         private PictureBox picture = new PictureBox();
         private bool isMove = false;
+        private Point lastLocation;
 
         #endregion
 
@@ -20,6 +21,7 @@ namespace HappyPetGame_160422035_160422041
         public User(Point location)
         {
             this.Picture.Location = location;
+            this.LastLocation = location;
             this.Picture.Tag = "user";
             this.Picture.Image = Properties.Resources.test_gambar;
         }
@@ -27,6 +29,7 @@ namespace HappyPetGame_160422035_160422041
 
         #region PROPERTIES
         public PictureBox Picture { get => picture; set => picture = value; }
+        public Point LastLocation { get => lastLocation; set => lastLocation = value; }
         public bool IsMove {  get => isMove; set => isMove = value; }
         #endregion
 
@@ -37,6 +40,11 @@ namespace HappyPetGame_160422035_160422041
             Picture.SizeMode = PictureBoxSizeMode.AutoSize;
             Picture.BackColor = Color.Transparent;
             Picture.BringToFront();
+        }
+
+        public void Save()
+        {
+            this.Picture.Location = LastLocation;
         }
 
         public bool IsCollision(Boundary boundary, char dir, int range)

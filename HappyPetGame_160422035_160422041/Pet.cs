@@ -29,7 +29,10 @@ namespace HappyPetGame_160422035_160422041
         #endregion
 
         #region CONSTRUCTOR
+        public Pet()
+        {
 
+        }
         #endregion
 
         #region PROPERTIES
