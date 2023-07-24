@@ -142,9 +142,6 @@
   <data name="bg-battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg-battle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mapTest_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mapTest_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -153,6 +150,9 @@
   </data>
   <data name="mapZoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mapZoom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bird-idle-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bird-idle-200.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Blue Marble Toy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blue Marble Toy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -168,6 +168,9 @@
   </data>
   <data name="play-hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\play-hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapTest_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapTest_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Blue Marble Toy 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blue Marble Toy 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,8 +193,14 @@
   <data name="Asimole" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Asimole.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="reset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="test_gambar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\test_gambar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Battle_Arena_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Battle_Arena_text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bird-idle-2001" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bird-idle-2001.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,32 +214,29 @@
   <data name="play-click" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\play-click.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mapTest_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mapTest_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mapTest_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapTest_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_left.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="down-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\down-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Battle_Arena_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Battle_Arena_text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Yarn Toy 11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yarn Toy 11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mapFinalBener 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mapFinalBener 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="up-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\up-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="map3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\map3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Idle Dog Animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Idle Dog Animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_right.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bird-idle-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bird-idle-200.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Demon Pot_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Demon Pot_text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="map2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\map2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,16 +259,16 @@
   <data name="Loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Loading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="up-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\up-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="down-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\down-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Demon Pot_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Demon Pot_text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Idle Dog Animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Idle Dog Animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bg-login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg-login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Yarn Toy 11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Yarn Toy 11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bg-battle-arena-menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg-battle-arena-menu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

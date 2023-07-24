@@ -31,6 +31,7 @@
             this.btnPlay = new System.Windows.Forms.Button();
             this.lblBatleArena = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.buttonReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.lblBatleArena)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,6 +81,22 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // buttonReset
+            // 
+            this.buttonReset.BackColor = System.Drawing.Color.Transparent;
+            this.buttonReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonReset.FlatAppearance.BorderSize = 0;
+            this.buttonReset.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReset.Image = global::HappyPetGame_160422035_160422041.Properties.Resources.reset;
+            this.buttonReset.Location = new System.Drawing.Point(680, 394);
+            this.buttonReset.Name = "buttonReset";
+            this.buttonReset.Size = new System.Drawing.Size(172, 55);
+            this.buttonReset.TabIndex = 3;
+            this.buttonReset.UseVisualStyleBackColor = false;
+            this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
+            // 
             // BattleArena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -88,6 +105,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(864, 461);
             this.ControlBox = false;
+            this.Controls.Add(this.buttonReset);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblBatleArena);
             this.Controls.Add(this.btnPlay);
@@ -109,5 +127,6 @@
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.PictureBox lblBatleArena;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonReset;
     }
 }

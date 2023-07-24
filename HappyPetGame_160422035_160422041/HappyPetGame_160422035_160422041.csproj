@@ -84,6 +84,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCreateBattlePet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCreateBattlePet.Designer.cs">
+      <DependentUpon>FormCreateBattlePet.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBattle.resx">
       <DependentUpon>FormBattle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCreateBattlePet.resx">
+      <DependentUpon>FormCreateBattlePet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -377,6 +386,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Yarn Toy 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg-battle-arena-menu1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

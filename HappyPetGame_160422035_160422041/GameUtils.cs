@@ -83,7 +83,6 @@ namespace HappyPetGame_160422035_160422041
             { 'S', Properties.Resources.down_2 },
             { 'D', Properties.Resources.right_2 }
         };
-
         public static readonly Dictionary<char, Image> PLAYER_RUN_IMAGES = new Dictionary<char, Image>
         {
             { 'W', Properties.Resources.user_up },
@@ -106,6 +105,7 @@ namespace HappyPetGame_160422035_160422041
         public static readonly int BASE_DEMON_POT_HP = 510;
         public static readonly int BASE_DEMON_POT_DAMAGE = 70;
         public static readonly int BASE_DEMON_POT_ULTI = 130;
+        public static readonly int BONUS_BATTLE = 50;
         /// <summary>
         /// Dari -> Kemana
         /// </summary>

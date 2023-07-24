@@ -16,10 +16,12 @@ namespace HappyPetGame_160422035_160422041
         FormSelectEnemy formSelectEnemy;
         Enemy enemy;
         BattlePet battlePet;
+        Player player; 
         int battlePetHp, enemyHp;
 
         bool makeChoice = true;  //! Waktu pemilihan
         bool isUserMakeChoice = false;
+        bool isEnd = false;
         bool transition = false;
         bool isBTKSession = false;
         bool isBattlePetAttackSession = false;
@@ -42,9 +44,10 @@ namespace HappyPetGame_160422035_160422041
         {
             formSelectEnemy = (FormSelectEnemy)this.Owner;
             enemy = formSelectEnemy.enemy;
-            battlePet = formSelectEnemy.battlePet;
+            battlePet = Auth.player().BattlePet;
+            player = Auth.player();
             pictureBoxEnemy.Image = formSelectEnemy.enemy.Picture.Image;
-            pictureBoxBattlePet.Image = formSelectEnemy.battlePet.PetImage;
+            pictureBoxBattlePet.Image = Auth.player().BattlePet.PetImage;
 
             battlePetHp = battlePet.Hp;
             enemyHp = enemy.Hp;
@@ -69,6 +72,9 @@ namespace HappyPetGame_160422035_160422041
             //! Hasil battle
             if (battlePetHp == 0)
             {
+                player.PetDefenderCoins += (GameUtils.BONUS_BATTLE * battlePet.Level);
+                Auth.UpdateCurrentPlayer(player);
+
                 labelKeputusan.Text = "";
                 labelBattlePetUltimate.Text = "";
                 labelEnemyUltimate.Text = "";
@@ -77,14 +83,15 @@ namespace HappyPetGame_160422035_160422041
                 panelBTK.Enabled = false;
                 panelBTK.Visible = false;
                 game.Enabled = false;
-                Player player = Auth.player();
-                player.Points += battlePetHp;
-                player.Coins += (int)(battlePetHp + (0.4 * enemy.Hp));
-                Auth.UpdateCurrentPlayer(player);
+                isEnd = true;
                 return;
             }
             else if (enemyHp == 0)
             {
+                player.PetDefenderCoins += battlePetHp * (GameUtils.BONUS_BATTLE * battlePet.Level);
+                player.Points += battlePetHp * (30 * battlePet.Level);
+                Auth.UpdateCurrentPlayer(player);
+
                 labelKeputusan.Text = "";
                 labelBattlePetUltimate.Text = "";
                 labelEnemyUltimate.Text = "";
@@ -93,6 +100,7 @@ namespace HappyPetGame_160422035_160422041
                 panelBTK.Enabled = false;
                 panelBTK.Visible = false;
                 game.Enabled = false;
+                isEnd = true;
                 return;
             }
 
@@ -539,21 +547,29 @@ namespace HappyPetGame_160422035_160422041
         private void FormBattle_KeyDown(object sender, KeyEventArgs e)
         {
             game.Stop();
-            if (e.KeyCode == Keys.Escape)
+            if (!isEnd)
             {
-                DialogResult res = MessageBox.Show(
-                        "Yakin? Kamu nggak bakal dapet point lhoo",
-                        ":(",
-                        MessageBoxButtons.YesNo,
-                        MessageBoxIcon.Question
-                    );
-
-                if (res == DialogResult.Yes)
+                if (e.KeyCode == Keys.Escape)
                 {
-                    this.Close();
-                    return;
+                    DialogResult res = MessageBox.Show(
+                            "Yakin? Kamu nggak bakal dapet point lhoo",
+                            ":(",
+                            MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Question
+                        );
+
+                    if (res == DialogResult.Yes)
+                    {
+                        this.Close();
+                        return;
+                    }
+                    game.Start();
                 }
-                game.Start();
+            }
+            else
+            {
+                this.Close();
+                return;
             }
         }
 

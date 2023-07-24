@@ -133,6 +133,16 @@ namespace HappyPetGame_160422035_160422041.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg_battle_arena_menu1 {
+            get {
+                object obj = ResourceManager.GetObject("bg-battle-arena-menu1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bg_login {
             get {
                 object obj = ResourceManager.GetObject("bg-login", resourceCulture);
@@ -436,6 +446,16 @@ namespace HappyPetGame_160422035_160422041.Properties {
         internal static System.Drawing.Bitmap play_hover {
             get {
                 object obj = ResourceManager.GetObject("play-hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reset {
+            get {
+                object obj = ResourceManager.GetObject("reset", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -14,7 +14,6 @@ namespace HappyPetGame_160422035_160422041
     public partial class FormSelectEnemy : Form
     {
         public Enemy enemy;
-        public BattlePet battlePet = new BattlePet("HAHA", Properties.Resources.bird_idle_200);
         public FormSelectEnemy()
         {
             InitializeComponent();
@@ -41,8 +40,7 @@ namespace HappyPetGame_160422035_160422041
 
         private void btnFightAsimole_Click(object sender, EventArgs e)
         {
-            BattlePet battlePet = new BattlePet("YUng", Properties.Resources.bird_idle_2001);
-            enemy = new Enemy("Asimole", battlePet.Level, GameUtils.BASE_ASIMOLE_DAMAGE, GameUtils.BASE_ASIMOLE_HP, GameUtils.BASE_ASIMOLE_ULTI, pictureBoxAsimole, 1);
+            enemy = new Enemy("Asimole", Auth.player().BattlePet.Level, GameUtils.BASE_ASIMOLE_DAMAGE, GameUtils.BASE_ASIMOLE_HP, GameUtils.BASE_ASIMOLE_ULTI, pictureBoxAsimole, 1);
             FormBattle formBattle = new FormBattle();
             formBattle.Owner = this;
             formBattle.ShowDialog();
@@ -50,7 +48,7 @@ namespace HappyPetGame_160422035_160422041
 
         private void btnFightBarrel_Click(object sender, EventArgs e)
         {
-            enemy = new Enemy("Barrel", new Player("HAHA").BattlePet.Level, GameUtils.BASE_BARREL_DAMAGE, GameUtils.BASE_BARREL_HP, GameUtils.BASE_BARREL_ULTI, pictureBoxBarrel);
+            enemy = new Enemy("Barrel", Auth.player().BattlePet.Level, GameUtils.BASE_BARREL_DAMAGE, GameUtils.BASE_BARREL_HP, GameUtils.BASE_BARREL_ULTI, pictureBoxBarrel);
             FormBattle formBattle = new FormBattle();
             formBattle.Owner = this;
             formBattle.ShowDialog();
@@ -58,7 +56,7 @@ namespace HappyPetGame_160422035_160422041
 
         private void btnFightDemonPot_Click(object sender, EventArgs e)
         {
-            enemy = new Enemy("Barrel", new Player("HAHA").BattlePet.Level, GameUtils.BASE_DEMON_POT_DAMAGE, GameUtils.BASE_DEMON_POT_HP, GameUtils.BASE_DEMON_POT_ULTI, pictureBoxDemonPot);
+            enemy = new Enemy("Demon Pot", Auth.player().BattlePet.Level, GameUtils.BASE_DEMON_POT_DAMAGE, GameUtils.BASE_DEMON_POT_HP, GameUtils.BASE_DEMON_POT_ULTI, pictureBoxDemonPot);
             FormBattle formBattle = new FormBattle();
             formBattle.Owner = this;
             formBattle.ShowDialog();

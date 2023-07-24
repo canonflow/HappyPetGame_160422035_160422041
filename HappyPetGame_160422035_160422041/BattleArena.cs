@@ -23,11 +23,17 @@ namespace HappyPetGame_160422035_160422041
         {
             this.Size = new Size(880, 500);
             btnPlay.Size = new Size(215, 55);
+            buttonReset.Size = new Size(172, 55);
             lblBatleArena.SizeMode = PictureBoxSizeMode.AutoSize;
             
             btnPlay.Location = new Point(
                     (this.ClientSize.Width - btnPlay.Width)/2,
                     (this.ClientSize.Height - btnPlay.Height - 30)
+                );
+
+            buttonReset.Location = new Point(
+                    (this.ClientSize.Width - buttonReset.Width - 20),
+                    (this.ClientSize.Height - buttonReset.Height - 20)
                 );
 
             lblBatleArena.Location = new Point(
@@ -56,10 +62,27 @@ namespace HappyPetGame_160422035_160422041
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            FormSelectEnemy selectEnemy = new FormSelectEnemy();
-            this.Hide();
-            selectEnemy.ShowDialog();
-            this.Close();
+            try
+            {
+                if (Auth.player().BattlePet != null)
+                {
+                    FormSelectEnemy selectEnemy = new FormSelectEnemy();
+                    this.Hide();
+                    selectEnemy.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    FormCreateBattlePet create = new FormCreateBattlePet();
+                    this.Hide();
+                    create.ShowDialog();
+                    this.Close();
+                }
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.Message);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -71,6 +94,21 @@ namespace HappyPetGame_160422035_160422041
         protected override void OnActivated(EventArgs e)
         {
             player.PlayLooping();
+        }
+
+        private void buttonReset_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormCreateBattlePet create = new FormCreateBattlePet();
+                this.Hide();
+                create.ShowDialog();
+                this.Close();
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.Message);
+            }
         }
     }
 }
