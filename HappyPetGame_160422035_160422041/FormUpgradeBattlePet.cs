@@ -12,7 +12,11 @@ namespace HappyPetGame_160422035_160422041
 {
     public partial class FormUpgradeBattlePet : Form
     {
+        #region FIELDS
         Player player;
+        #endregion
+
+        #region CONSTRUCTOR
         public FormUpgradeBattlePet()
         {
             InitializeComponent();
@@ -34,7 +38,9 @@ namespace HappyPetGame_160422035_160422041
             labelCoins.Text = player.PetDefenderCoins.ToString();
 
         }
+        #endregion
 
+        #region METHODS
         private void buttonUpgrade_Click(object sender, EventArgs e)
         {
             try
@@ -57,5 +63,6 @@ namespace HappyPetGame_160422035_160422041
         {
             this.Close();
         }
+        #endregion
     }
 }

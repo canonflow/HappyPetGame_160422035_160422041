@@ -63,6 +63,26 @@ namespace HappyPetGame_160422035_160422041.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap about__2_ {
+            get {
+                object obj = ResourceManager.GetObject("about (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap about_button {
+            get {
+                object obj = ResourceManager.GetObject("about_button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Asimole {
             get {
                 object obj = ResourceManager.GetObject("Asimole", resourceCulture);
@@ -166,6 +186,16 @@ namespace HappyPetGame_160422035_160422041.Properties {
         internal static System.Drawing.Bitmap bg_login {
             get {
                 object obj = ResourceManager.GetObject("bg-login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bg_signup {
+            get {
+                object obj = ResourceManager.GetObject("bg-signup", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -696,6 +726,16 @@ namespace HappyPetGame_160422035_160422041.Properties {
         internal static System.Drawing.Bitmap Select_Enemy_text {
             get {
                 object obj = ResourceManager.GetObject("Select_Enemy_text", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shop {
+            get {
+                object obj = ResourceManager.GetObject("shop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

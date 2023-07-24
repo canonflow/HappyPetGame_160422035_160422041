@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormToyShop));
             this.pictureBoxYarnToy = new System.Windows.Forms.PictureBox();
             this.pictureBoxBlueMarble = new System.Windows.Forms.PictureBox();
             this.pictureBoxBone = new System.Windows.Forms.PictureBox();
@@ -48,7 +49,7 @@
             this.pictureBoxYarnToy.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxYarnToy.Image = global::HappyPetGame_160422035_160422041.Properties.Resources.Yarn_Toy_1;
             this.pictureBoxYarnToy.Location = new System.Drawing.Point(552, 99);
-            this.pictureBoxYarnToy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxYarnToy.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxYarnToy.Name = "pictureBoxYarnToy";
             this.pictureBoxYarnToy.Size = new System.Drawing.Size(200, 200);
             this.pictureBoxYarnToy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -60,7 +61,7 @@
             this.pictureBoxBlueMarble.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxBlueMarble.Image = global::HappyPetGame_160422035_160422041.Properties.Resources.Blue_Marble_Toy_1;
             this.pictureBoxBlueMarble.Location = new System.Drawing.Point(306, 99);
-            this.pictureBoxBlueMarble.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxBlueMarble.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxBlueMarble.Name = "pictureBoxBlueMarble";
             this.pictureBoxBlueMarble.Size = new System.Drawing.Size(200, 200);
             this.pictureBoxBlueMarble.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -72,7 +73,7 @@
             this.pictureBoxBone.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxBone.Image = global::HappyPetGame_160422035_160422041.Properties.Resources.Bone_Toy;
             this.pictureBoxBone.Location = new System.Drawing.Point(52, 99);
-            this.pictureBoxBone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxBone.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxBone.Name = "pictureBoxBone";
             this.pictureBoxBone.Size = new System.Drawing.Size(200, 200);
             this.pictureBoxBone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -82,47 +83,51 @@
             // radioButtonBone
             // 
             this.radioButtonBone.AutoSize = true;
+            this.radioButtonBone.BackColor = System.Drawing.Color.LavenderBlush;
             this.radioButtonBone.Checked = true;
             this.radioButtonBone.Font = new System.Drawing.Font("Dogica Pixel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonBone.Location = new System.Drawing.Point(52, 62);
-            this.radioButtonBone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonBone.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonBone.Name = "radioButtonBone";
             this.radioButtonBone.Size = new System.Drawing.Size(103, 23);
             this.radioButtonBone.TabIndex = 3;
             this.radioButtonBone.TabStop = true;
             this.radioButtonBone.Text = "Bone";
-            this.radioButtonBone.UseVisualStyleBackColor = true;
+            this.radioButtonBone.UseVisualStyleBackColor = false;
             this.radioButtonBone.CheckedChanged += new System.EventHandler(this.radioButtonBone_CheckedChanged);
             // 
             // radioButtonBlueMarble
             // 
             this.radioButtonBlueMarble.AutoSize = true;
+            this.radioButtonBlueMarble.BackColor = System.Drawing.Color.LavenderBlush;
             this.radioButtonBlueMarble.Font = new System.Drawing.Font("Dogica Pixel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonBlueMarble.Location = new System.Drawing.Point(306, 62);
-            this.radioButtonBlueMarble.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonBlueMarble.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonBlueMarble.Name = "radioButtonBlueMarble";
             this.radioButtonBlueMarble.Size = new System.Drawing.Size(136, 23);
             this.radioButtonBlueMarble.TabIndex = 4;
             this.radioButtonBlueMarble.Text = "Marble";
-            this.radioButtonBlueMarble.UseVisualStyleBackColor = true;
+            this.radioButtonBlueMarble.UseVisualStyleBackColor = false;
             this.radioButtonBlueMarble.CheckedChanged += new System.EventHandler(this.radioButtonBlueMarble_CheckedChanged);
             // 
             // radioButtonYarn
             // 
             this.radioButtonYarn.AutoSize = true;
+            this.radioButtonYarn.BackColor = System.Drawing.Color.LavenderBlush;
             this.radioButtonYarn.Font = new System.Drawing.Font("Dogica Pixel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonYarn.Location = new System.Drawing.Point(552, 62);
-            this.radioButtonYarn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonYarn.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonYarn.Name = "radioButtonYarn";
             this.radioButtonYarn.Size = new System.Drawing.Size(101, 23);
             this.radioButtonYarn.TabIndex = 5;
             this.radioButtonYarn.Text = "Yarn";
-            this.radioButtonYarn.UseVisualStyleBackColor = true;
+            this.radioButtonYarn.UseVisualStyleBackColor = false;
             this.radioButtonYarn.CheckedChanged += new System.EventHandler(this.radioButtonYarn_CheckedChanged);
             // 
             // labelBone
             // 
             this.labelBone.AutoSize = true;
+            this.labelBone.BackColor = System.Drawing.Color.LavenderBlush;
             this.labelBone.Font = new System.Drawing.Font("Dogica Pixel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBone.Location = new System.Drawing.Point(50, 338);
             this.labelBone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -134,6 +139,7 @@
             // labelBlueMarble
             // 
             this.labelBlueMarble.AutoSize = true;
+            this.labelBlueMarble.BackColor = System.Drawing.Color.LavenderBlush;
             this.labelBlueMarble.Font = new System.Drawing.Font("Dogica Pixel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBlueMarble.Location = new System.Drawing.Point(304, 338);
             this.labelBlueMarble.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -144,6 +150,7 @@
             // labelYarn
             // 
             this.labelYarn.AutoSize = true;
+            this.labelYarn.BackColor = System.Drawing.Color.LavenderBlush;
             this.labelYarn.Font = new System.Drawing.Font("Dogica Pixel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelYarn.Location = new System.Drawing.Point(550, 338);
             this.labelYarn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -155,7 +162,7 @@
             // 
             this.buttonBuy.Font = new System.Drawing.Font("Dogica Pixel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBuy.Location = new System.Drawing.Point(346, 390);
-            this.buttonBuy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonBuy.Margin = new System.Windows.Forms.Padding(2);
             this.buttonBuy.Name = "buttonBuy";
             this.buttonBuy.Size = new System.Drawing.Size(96, 41);
             this.buttonBuy.TabIndex = 9;
@@ -167,6 +174,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::HappyPetGame_160422035_160422041.Properties.Resources.shop;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(823, 480);
             this.Controls.Add(this.buttonBuy);
             this.Controls.Add(this.labelYarn);
@@ -178,8 +187,10 @@
             this.Controls.Add(this.pictureBoxYarnToy);
             this.Controls.Add(this.pictureBoxBlueMarble);
             this.Controls.Add(this.pictureBoxBone);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormToyShop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Toy Shop";

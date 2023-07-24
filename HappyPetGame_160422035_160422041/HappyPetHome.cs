@@ -5,6 +5,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,11 +14,16 @@ namespace HappyPetGame_160422035_160422041
 {
     public partial class HappyPetHome : Form
     {
+        #region FIELDS
+        SoundPlayer SoundPlayer = new SoundPlayer(@"music/wav/Shop-The-Legend-of-Zelda.wav");
+        #endregion
+
         public HappyPetHome()
         {
             InitializeComponent();
         }
 
+        #region METHODS
         private void buttonPlay_Click(object sender, EventArgs e)
         {
             //! Kalo player punya pet
@@ -64,5 +70,16 @@ namespace HappyPetGame_160422035_160422041
                     328
                 );
         }
+
+        private void HappyPetHome_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SoundPlayer.Stop();
+        }
+
+        protected override void OnActivated(EventArgs e)
+        {
+            SoundPlayer.PlayLooping();
+        }
+        #endregion
     }
 }

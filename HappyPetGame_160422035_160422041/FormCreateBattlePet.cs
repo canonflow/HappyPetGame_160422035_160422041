@@ -12,13 +12,16 @@ namespace HappyPetGame_160422035_160422041
 {
     public partial class FormCreateBattlePet : Form
     {
+        #region FIELDS
         BattlePet battlePet;
         Image image;
+        #endregion
         public FormCreateBattlePet()
         {
             InitializeComponent();
         }
 
+        #region METHODS
         private void FormCreateBattlePet_Load(object sender, EventArgs e)
         {
             this.Size = new Size(856, 500);
@@ -76,5 +79,6 @@ namespace HappyPetGame_160422035_160422041
                 MessageBox.Show(x.Message);
             }
         }
+        #endregion
     }
 }

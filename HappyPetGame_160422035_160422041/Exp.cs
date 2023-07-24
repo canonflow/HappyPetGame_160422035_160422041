@@ -14,6 +14,7 @@ namespace HappyPetGame_160422035_160422041
 {
     public partial class Exp : Form
     {
+        #region FIELDS
         SoundPlayer soundPlayer = new SoundPlayer(@"music/wav/Tarrey-Town.wav");
         int currentMap = 1;
         bool render = true;
@@ -29,6 +30,8 @@ namespace HappyPetGame_160422035_160422041
         Panel panel;
 
         Dictionary<char, Dictionary<string, bool>> keys = GameUtils.ImportKeys();
+        #endregion
+        #region CONSTRUCTOR
         public Exp()
         {
             MapBoundary.Init();
@@ -48,6 +51,8 @@ namespace HappyPetGame_160422035_160422041
             panel.BringToFront();
             //soundPlayer.PlayLooping();
         }
+        #endregion
+        #region METHODS
         public void Init()
         {
             this.Size = new Size(960+16, 608+30);
@@ -465,6 +470,7 @@ namespace HappyPetGame_160422035_160422041
         }
         #endregion
 
+        
         protected override void OnActivated(EventArgs e)
         {
             soundPlayer.PlayLooping();
@@ -479,5 +485,6 @@ namespace HappyPetGame_160422035_160422041
         {
             Auth.SignOut();
         }
+        #endregion
     }
 }

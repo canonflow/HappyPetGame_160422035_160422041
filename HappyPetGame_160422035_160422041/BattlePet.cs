@@ -74,7 +74,7 @@ namespace HappyPetGame_160422035_160422041
                 throw new ArgumentException("Tidak punya uang. Harga Upgrade: " + cost);
             }
 
-            if (this.Level + 1 < 50)
+            if (this.Level + 1 <= 50)
             {
                 this.Level++;  //! +1
                 this.Ultimate += GameUtils.ULTIMATE_FOR_UPGRADE;  //! +10

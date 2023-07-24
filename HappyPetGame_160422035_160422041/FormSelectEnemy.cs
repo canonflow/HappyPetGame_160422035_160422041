@@ -13,12 +13,15 @@ namespace HappyPetGame_160422035_160422041
 {
     public partial class FormSelectEnemy : Form
     {
+        #region FIELDS
         public Enemy enemy;
+        #endregion
         public FormSelectEnemy()
         {
             InitializeComponent();
         }
 
+        #region METHODS
         private void FormSelectEnemy_Load(object sender, EventArgs e)
         {
             this.Size = new Size(880, 500);
@@ -72,5 +75,6 @@ namespace HappyPetGame_160422035_160422041
             FormUpgradeBattlePet upgrade = new FormUpgradeBattlePet();
             upgrade.ShowDialog();
         }
+        #endregion
     }
 }

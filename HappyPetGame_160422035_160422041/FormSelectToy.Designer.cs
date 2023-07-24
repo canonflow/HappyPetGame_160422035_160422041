@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSelectToy));
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxToys = new System.Windows.Forms.ComboBox();
             this.pictureBoxToy = new System.Windows.Forms.PictureBox();
@@ -56,7 +57,7 @@
             this.comboBoxToys.Font = new System.Drawing.Font("Dogica Pixel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxToys.FormattingEnabled = true;
             this.comboBoxToys.Location = new System.Drawing.Point(41, 66);
-            this.comboBoxToys.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxToys.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxToys.Name = "comboBoxToys";
             this.comboBoxToys.Size = new System.Drawing.Size(208, 32);
             this.comboBoxToys.TabIndex = 1;
@@ -65,7 +66,7 @@
             // pictureBoxToy
             // 
             this.pictureBoxToy.Location = new System.Drawing.Point(57, 133);
-            this.pictureBoxToy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxToy.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxToy.Name = "pictureBoxToy";
             this.pictureBoxToy.Size = new System.Drawing.Size(150, 162);
             this.pictureBoxToy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -87,7 +88,7 @@
             // 
             this.buttonUse.Font = new System.Drawing.Font("Dogica Pixel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUse.Location = new System.Drawing.Point(80, 354);
-            this.buttonUse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonUse.Margin = new System.Windows.Forms.Padding(2);
             this.buttonUse.Name = "buttonUse";
             this.buttonUse.Size = new System.Drawing.Size(112, 41);
             this.buttonUse.TabIndex = 4;
@@ -123,6 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(255)))), ((int)(((byte)(208)))));
             this.ClientSize = new System.Drawing.Size(298, 537);
             this.Controls.Add(this.linkLabelBuyToy);
             this.Controls.Add(this.label2);
@@ -132,7 +134,8 @@
             this.Controls.Add(this.comboBoxToys);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormSelectToy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select Toy";

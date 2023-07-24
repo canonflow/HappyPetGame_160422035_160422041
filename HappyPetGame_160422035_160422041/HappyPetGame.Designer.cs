@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HappyPetGame));
             this.panelActivity = new System.Windows.Forms.Panel();
             this.buttonSleep = new System.Windows.Forms.Button();
             this.buttonVaccinate = new System.Windows.Forms.Button();
@@ -71,6 +72,7 @@
             // buttonSleep
             // 
             this.buttonSleep.BackColor = System.Drawing.Color.Yellow;
+            this.buttonSleep.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSleep.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSleep.Location = new System.Drawing.Point(781, 33);
             this.buttonSleep.Margin = new System.Windows.Forms.Padding(2);
@@ -84,6 +86,7 @@
             // buttonVaccinate
             // 
             this.buttonVaccinate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.buttonVaccinate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonVaccinate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVaccinate.Location = new System.Drawing.Point(476, 33);
             this.buttonVaccinate.Margin = new System.Windows.Forms.Padding(2);
@@ -97,6 +100,7 @@
             // buttonBath
             // 
             this.buttonBath.BackColor = System.Drawing.Color.Cyan;
+            this.buttonBath.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonBath.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBath.Location = new System.Drawing.Point(326, 33);
             this.buttonBath.Margin = new System.Windows.Forms.Padding(2);
@@ -110,6 +114,7 @@
             // buttonClean
             // 
             this.buttonClean.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.buttonClean.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonClean.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClean.Location = new System.Drawing.Point(634, 33);
             this.buttonClean.Margin = new System.Windows.Forms.Padding(2);
@@ -123,6 +128,7 @@
             // buttonPlay
             // 
             this.buttonPlay.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.buttonPlay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPlay.Location = new System.Drawing.Point(166, 33);
             this.buttonPlay.Margin = new System.Windows.Forms.Padding(2);
@@ -136,6 +142,7 @@
             // buttonFeed
             // 
             this.buttonFeed.BackColor = System.Drawing.Color.Coral;
+            this.buttonFeed.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonFeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonFeed.Location = new System.Drawing.Point(26, 33);
             this.buttonFeed.Margin = new System.Windows.Forms.Padding(2);
@@ -287,6 +294,7 @@
             this.Controls.Add(this.pictureBoxPet);
             this.Controls.Add(this.panelActivity);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "HappyPetGame";

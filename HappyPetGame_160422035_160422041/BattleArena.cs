@@ -13,12 +13,15 @@ namespace HappyPetGame_160422035_160422041
 {
     public partial class BattleArena : Form
     {
+        #region FIELDS
         SoundPlayer player = new SoundPlayer(@"music/wav/Sinnoh-Frontier-Brain.wav");
+        #endregion
         public BattleArena()
         {
             InitializeComponent();
         }
 
+        #region METHODS
         private void BattleArena_Load(object sender, EventArgs e)
         {
             this.Size = new Size(880, 500);
@@ -112,5 +115,6 @@ namespace HappyPetGame_160422035_160422041
                 MessageBox.Show(x.Message);
             }
         }
+        #endregion
     }
 }

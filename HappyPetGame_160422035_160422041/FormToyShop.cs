@@ -12,17 +12,21 @@ namespace HappyPetGame_160422035_160422041
 {
     public partial class FormToyShop : Form
     {
+        #region FIELDS
         HappyPetGame happyPetGame;
         Toy newToy;
         string name = "";
         int price = 0;
         int benefit = 0;
         Image picture;
+        #endregion
+
         public FormToyShop()
         {
             InitializeComponent();
         }
 
+        #region METHODS
         private void FormToyShop_Load(object sender, EventArgs e)
         {
             happyPetGame = (HappyPetGame)this.Owner;
@@ -97,14 +101,23 @@ namespace HappyPetGame_160422035_160422041
 
         private void buttonBuy_Click(object sender, EventArgs e)
         {
-            Player player = happyPetGame.player;
-            Pet pet = player.HappyPet;
-            pet.ListOfToys.Add(newToy);
-            player.HappyPet = pet;
+            try
+            {
+                Player player = happyPetGame.player;
+                Pet pet = player.HappyPet;
+                pet.BuyToy(ref player, newToy);
+                pet.ListOfToys.Add(newToy);
+                player.HappyPet = pet;
 
-            happyPetGame.player = player;
-            Auth.UpdateCurrentPlayer(player);
-            this.Close();
+                happyPetGame.player = player;
+                Auth.UpdateCurrentPlayer(player);
+                this.Close();
+            }
+            catch (Exception X)
+            {
+                MessageBox.Show(X.Message);
+            }
         }
+        #endregion
     }
 }

@@ -13,6 +13,7 @@ namespace HappyPetGame_160422035_160422041
 {
     public partial class FormBattle : Form
     {
+        #region FIELDS
         FormSelectEnemy formSelectEnemy;
         Enemy enemy;
         BattlePet battlePet;
@@ -22,10 +23,8 @@ namespace HappyPetGame_160422035_160422041
         bool makeChoice = true;  //! Waktu pemilihan
         bool isUserMakeChoice = false;
         bool isEnd = false;
-        bool transition = false;
         bool isBTKSession = false;
         bool isBattlePetAttackSession = false;
-        bool isEnemyAttackSession = false;
         string userChoice = "";
         string enemyChoice = "";
         string userAttackType = "";
@@ -35,11 +34,14 @@ namespace HappyPetGame_160422035_160422041
         int cnt = 5;
         int charge = 0;
         int enemyCharge = 0;
+
+        #endregion
         public FormBattle()
         {
             InitializeComponent();
         }
 
+        #region METHODS
         private void FormBattle_Load(object sender, EventArgs e)
         {
             formSelectEnemy = (FormSelectEnemy)this.Owner;
@@ -611,5 +613,6 @@ namespace HappyPetGame_160422035_160422041
                 }
             }
         }
+        #endregion
     }
 }

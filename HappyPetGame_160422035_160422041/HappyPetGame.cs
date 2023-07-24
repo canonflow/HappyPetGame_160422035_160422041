@@ -12,13 +12,16 @@ namespace HappyPetGame_160422035_160422041
 {
     public partial class HappyPetGame : Form
     {
+        #region FIELDS
         public Player player;
         public Toy selectedToy = null;
+        #endregion
         public HappyPetGame()
         {
             InitializeComponent();
         }
 
+        #region METHODS
         private void HappyPetGame_Load(object sender, EventArgs e)
         {
             this.Size = new Size(982, 684);
@@ -512,5 +515,6 @@ namespace HappyPetGame_160422035_160422041
             labelEnergy.Text = "Energy: " + player.HappyPet.Energy.ToString() + " %";
             labelHappiness.Text = "Happiness: " + player.HappyPet.Happiness.ToString() + " %";
         }
+        #endregion
     }
 }

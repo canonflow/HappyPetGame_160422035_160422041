@@ -12,12 +12,15 @@ namespace HappyPetGame_160422035_160422041
 {
     public partial class FormSelectToy : Form
     {
+        #region FIELDS
         HappyPetGame happyPetGame;
+        #endregion
         public FormSelectToy()
         {
             InitializeComponent();
         }
 
+        #region METHODS
         private void FormSelectToy_Load(object sender, EventArgs e)
         {
             happyPetGame = (HappyPetGame)this.Owner;
@@ -104,5 +107,6 @@ namespace HappyPetGame_160422035_160422041
             toyShop.ShowDialog();
             this.Close();
         }
+        #endregion
     }
 }

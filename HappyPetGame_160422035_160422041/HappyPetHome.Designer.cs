@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HappyPetHome));
             this.buttonPlay = new System.Windows.Forms.Button();
             this.buttonResetGame = new System.Windows.Forms.Button();
             this.pictureBoxTitle = new System.Windows.Forms.PictureBox();
@@ -90,11 +91,13 @@
             this.Controls.Add(this.buttonPlay);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "HappyPetHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Happy Pet Home";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HappyPetHome_FormClosing);
             this.Load += new System.EventHandler(this.HappyPetHome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTitle)).EndInit();
             this.ResumeLayout(false);

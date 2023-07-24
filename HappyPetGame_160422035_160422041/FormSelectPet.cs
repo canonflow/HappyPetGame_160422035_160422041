@@ -12,12 +12,15 @@ namespace HappyPetGame_160422035_160422041
 {
     public partial class FormSelectPet : Form
     {
+        #region FIELDS
         Player player;
+        #endregion
         public FormSelectPet()
         {
             InitializeComponent();
         }
 
+        #region METHODS
         private void FormSelectPet_Load(object sender, EventArgs e)
         {
             this.Size = new Size(1319, 630);
@@ -102,5 +105,6 @@ namespace HappyPetGame_160422035_160422041
             labelEnvi.Visible = false;
             comboBoxEnvironment.Visible = false;
         }
+        #endregion
     }
 }

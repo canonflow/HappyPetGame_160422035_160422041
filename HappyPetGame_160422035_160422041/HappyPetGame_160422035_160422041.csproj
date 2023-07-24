@@ -52,6 +52,12 @@
     <Compile Include="BattleArena.Designer.cs">
       <DependentUpon>BattleArena.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormBattle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,12 +69,6 @@
     <Compile Include="Boundary.cs" />
     <Compile Include="Cat.cs" />
     <Compile Include="Chameleon.cs" />
-    <Compile Include="Coba.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Coba.Designer.cs">
-      <DependentUpon>Coba.cs</DependentUpon>
-    </Compile>
     <Compile Include="Dog.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="Exp.cs">
@@ -160,12 +160,6 @@
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Map1Point.cs" />
-    <Compile Include="Map2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Map2.Designer.cs">
-      <DependentUpon>Map2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Map2Point.cs" />
     <Compile Include="Map3Point.cs" />
     <Compile Include="MapBoundary.cs" />
@@ -186,14 +180,14 @@
     <EmbeddedResource Include="BattleArena.resx">
       <DependentUpon>BattleArena.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Coba.resx">
-      <DependentUpon>Coba.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Exp.resx">
       <DependentUpon>Exp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBattle.resx">
       <DependentUpon>FormBattle.cs</DependentUpon>
@@ -230,9 +224,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Map2.resx">
-      <DependentUpon>Map2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -491,6 +482,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hp_game.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg-signup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

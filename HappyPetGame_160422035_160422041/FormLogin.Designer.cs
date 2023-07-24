@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.buttonSignupPage = new System.Windows.Forms.Button();
+            this.buttonAbout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxUsername
@@ -87,6 +89,22 @@
             this.buttonSignupPage.UseVisualStyleBackColor = false;
             this.buttonSignupPage.Click += new System.EventHandler(this.buttonSignupPage_Click);
             // 
+            // buttonAbout
+            // 
+            this.buttonAbout.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAbout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAbout.FlatAppearance.BorderSize = 0;
+            this.buttonAbout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonAbout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAbout.Image = global::HappyPetGame_160422035_160422041.Properties.Resources.about_button;
+            this.buttonAbout.Location = new System.Drawing.Point(92, 212);
+            this.buttonAbout.Name = "buttonAbout";
+            this.buttonAbout.Size = new System.Drawing.Size(182, 42);
+            this.buttonAbout.TabIndex = 4;
+            this.buttonAbout.UseVisualStyleBackColor = false;
+            this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -94,12 +112,14 @@
             this.BackgroundImage = global::HappyPetGame_160422035_160422041.Properties.Resources.bg_login;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(379, 442);
+            this.Controls.Add(this.buttonAbout);
             this.Controls.Add(this.buttonSignupPage);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxUsername);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -116,5 +136,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.Button buttonSignupPage;
+        private System.Windows.Forms.Button buttonAbout;
     }
 }

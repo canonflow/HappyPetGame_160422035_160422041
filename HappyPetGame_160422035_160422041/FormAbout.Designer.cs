@@ -1,6 +1,6 @@
 ﻿namespace HappyPetGame_160422035_160422041
 {
-    partial class Coba
+    partial class FormAbout
     {
         /// <summary>
         /// Required designer variable.
@@ -28,42 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.BackgroundMovement = new System.Windows.Forms.Timer(this.components);
-            this.PlayerMovement = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // BackgroundMovement
-            // 
-            this.BackgroundMovement.Enabled = true;
-            this.BackgroundMovement.Interval = 1;
-            this.BackgroundMovement.Tick += new System.EventHandler(this.BackgroundMovement_Tick);
-            // 
-            // PlayerMovement
-            // 
-            this.PlayerMovement.Enabled = true;
-            this.PlayerMovement.Interval = 1;
-            this.PlayerMovement.Tick += new System.EventHandler(this.PlayerMovement_Tick);
-            // 
-            // Coba
+            // FormAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 495);
+            this.BackgroundImage = global::HappyPetGame_160422035_160422041.Properties.Resources.about__2_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(639, 681);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Coba";
-            this.Text = "Coba";
-            this.Load += new System.EventHandler(this.Coba_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Coba_KeyDown);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Coba_KeyUp);
+            this.MaximizeBox = false;
+            this.Name = "FormAbout";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "About";
+            this.Load += new System.EventHandler(this.FormAbout_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Timer BackgroundMovement;
-        private System.Windows.Forms.Timer PlayerMovement;
     }
 }
