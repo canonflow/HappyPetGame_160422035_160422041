@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -44,7 +45,24 @@ namespace HappyPetGame_160422035_160422041
 
         private void HappyPetHome_Load(object sender, EventArgs e)
         {
+            this.Size = new Size(616, 405);
+            buttonPlay.Size = new Size(160, 35);
+            buttonResetGame.Size = new Size(129, 27);
+            pictureBoxTitle.Size = new Size(297, 51);
+            pictureBoxTitle.Location = new Point(
+                    (this.ClientSize.Width - pictureBoxTitle.Width) / 2,
+                    12
+                );
 
+            buttonPlay.Location = new Point(
+                    (this.ClientSize.Width - buttonPlay.Width) / 2,
+                    141
+                );
+
+            buttonResetGame.Location = new Point(
+                    (this.ClientSize.Width - buttonResetGame.Width ) / 2,
+                    328
+                );
         }
     }
 }

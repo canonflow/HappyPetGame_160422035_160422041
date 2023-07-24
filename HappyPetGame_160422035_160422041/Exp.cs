@@ -202,7 +202,7 @@ namespace HappyPetGame_160422035_160422041
             // TODO: Kalo masih render Boundaries baru, DITUNGGU
             if (render) return;
 
-            this.Text = "( " + user.Picture.Left + " , " + user.Picture.Top + " )";
+
             move = true;
 
             #region PLAYER CONTROL

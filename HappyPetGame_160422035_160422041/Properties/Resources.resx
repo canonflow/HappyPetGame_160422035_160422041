@@ -124,8 +124,17 @@
   <data name="Play Yarn Dog Animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Play Yarn Dog Animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Feed Dog Animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Feed Dog Animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mapFinalBener 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mapFinalBener 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reset_game_hpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reset_game_hpg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Vaccinate Bird Animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vaccinate Bird Animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,6 +163,9 @@
   <data name="Idle Dog Animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Idle Dog Animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hp_home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hp_home.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,8 +175,8 @@
   <data name="map2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\map2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="upgrade" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\upgrade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Select_Enemy_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Select_Enemy_text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Idle Cat Animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Idle Cat Animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -201,6 +213,9 @@
   </data>
   <data name="test_gambar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\test_gambar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yarn Toy 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yarn Toy 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="up-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\up-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,9 +280,6 @@
   <data name="bg-battle-arena-menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg-battle-arena-menu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Blue Marble Toy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Blue Marble Toy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="user_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_right.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -280,8 +292,8 @@
   <data name="Play Yarn Cat Animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Play Yarn Cat Animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mapTest_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mapTest_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Bone Toy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bone Toy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Play Bone Cat Animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Play Bone Cat Animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -304,8 +316,8 @@
   <data name="Demonpot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Demonpot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Select_Enemy_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Select_Enemy_text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mapTest_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapTest_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reset" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -319,14 +331,17 @@
   <data name="Play Dog Animation_Blue_Marble" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Play Dog Animation_Blue_Marble.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="happy_pet_title" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\happy_pet_title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Demon Pot_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Demon Pot_text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bg-login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg-login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Bone Toy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bone Toy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="upgrade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\upgrade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bg-battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg-battle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -334,16 +349,16 @@
   <data name="Feed Cat Animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Feed Cat Animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Feed Dog Animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Feed Dog Animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Blue Marble Toy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue Marble Toy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Bath Dog Animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bath Dog Animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Yarn Toy 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Yarn Toy 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="play_game_hpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play_game_hpg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hp_game" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hp_game.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

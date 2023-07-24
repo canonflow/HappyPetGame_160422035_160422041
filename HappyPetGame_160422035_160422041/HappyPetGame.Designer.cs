@@ -229,6 +229,7 @@
             // labelPlayerName
             // 
             this.labelPlayerName.AutoSize = true;
+            this.labelPlayerName.BackColor = System.Drawing.Color.Transparent;
             this.labelPlayerName.Font = new System.Drawing.Font("Dogica Pixel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPlayerName.Location = new System.Drawing.Point(33, 15);
             this.labelPlayerName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -240,6 +241,7 @@
             // labelCoin
             // 
             this.labelCoin.AutoSize = true;
+            this.labelCoin.BackColor = System.Drawing.Color.Transparent;
             this.labelCoin.Font = new System.Drawing.Font("Dogica Pixel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCoin.Location = new System.Drawing.Point(33, 51);
             this.labelCoin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -275,6 +277,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::HappyPetGame_160422035_160422041.Properties.Resources.hp_game;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(724, 524);
             this.Controls.Add(this.labelDate);
             this.Controls.Add(this.labelCoin);

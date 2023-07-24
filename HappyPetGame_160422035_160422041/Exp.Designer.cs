@@ -46,7 +46,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Exp";
-            this.Text = "Exp";
+            this.Text = "Enchanted Valley";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Exp_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Exp_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Exp_KeyUp);
