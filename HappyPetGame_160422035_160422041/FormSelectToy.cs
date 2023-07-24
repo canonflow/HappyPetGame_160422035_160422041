@@ -63,7 +63,8 @@ namespace HappyPetGame_160422035_160422041
                         Cat cat = pet as Cat;
                         Player player = happyPetGame.player;
 
-                        cat.Play(ref player);
+                        cat.Play(ref player, toy.Benefit);
+                        cat.ListOfToys.Remove(toy);
                         player.HappyPet = cat;
 
                         happyPetGame.player = player;
@@ -75,7 +76,8 @@ namespace HappyPetGame_160422035_160422041
                         Dog dog = pet as Dog;
                         Player player = happyPetGame.player;
 
-                        dog.Play(ref player);
+                        dog.Play(ref player, toy.Benefit);
+                        dog.ListOfToys.Remove(toy);
                         player.HappyPet = dog;
 
                         happyPetGame.player = player;

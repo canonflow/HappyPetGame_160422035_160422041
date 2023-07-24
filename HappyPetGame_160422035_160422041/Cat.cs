@@ -66,15 +66,15 @@ namespace HappyPetGame_160422035_160422041
             player.Coins += (int)(0.5 * 30 * 100);
             player.Coins += (int)(0.5 * 50 * 100);
         }
-        public void Play(ref Player player)
+        public void Play(ref Player player, int benefit)
         {
-            if (Happiness + 50 > 100)
+            if (Happiness + benefit > 100)
             {
                 Happiness = 100;
             }
             else
             {
-                base.Happiness += 50;
+                base.Happiness += benefit;
             }
             
             if (Energy - 30 < 0)
@@ -85,7 +85,7 @@ namespace HappyPetGame_160422035_160422041
             {
                 base.Energy -= 30;
             }
-            player.Coins += (int)(0.5 * 50 * 100);
+            player.Coins += (int)(0.5 * benefit * 100);
         }
 
         public void Sleep(ref Player player)
