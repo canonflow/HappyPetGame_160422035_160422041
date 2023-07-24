@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Testing));
             this.listBoxDisplay = new System.Windows.Forms.ListBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.buttonPlay = new System.Windows.Forms.Button();
@@ -85,10 +84,10 @@
             // 
             // smoke
             // 
-            this.smoke.Image = ((System.Drawing.Image)(resources.GetObject("smoke.Image")));
-            this.smoke.Location = new System.Drawing.Point(469, 115);
+            this.smoke.Image = global::HappyPetGame_160422035_160422041.Properties.Resources.Feed_Bird_Animation;
+            this.smoke.Location = new System.Drawing.Point(506, 122);
             this.smoke.Name = "smoke";
-            this.smoke.Size = new System.Drawing.Size(10, 30);
+            this.smoke.Size = new System.Drawing.Size(200, 200);
             this.smoke.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.smoke.TabIndex = 4;
             this.smoke.TabStop = false;

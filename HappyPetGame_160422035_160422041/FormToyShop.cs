@@ -73,7 +73,7 @@ namespace HappyPetGame_160422035_160422041
             name = "Blue Marble";
             price = 5000;
             benefit = 10;
-            picture = pictureBoxBone.Image;
+            picture = pictureBoxBlueMarble.Image;
 
             newToy = new Toy(name, price, benefit, picture);
             labelBlueMarble.Text = newToy.DisplayData();
@@ -86,10 +86,10 @@ namespace HappyPetGame_160422035_160422041
             labelBone.Text = "";
             labelBlueMarble.Text = "";
 
-            name = "Blue Marble";
+            name = "Yarn";
             price = 7000;
             benefit = 15;
-            picture = pictureBoxBone.Image;
+            picture = pictureBoxYarnToy.Image;
 
             newToy = new Toy(name, price, benefit, picture);
             labelYarn.Text = newToy.DisplayData();

@@ -103,6 +103,26 @@ namespace HappyPetGame_160422035_160422041.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bath_Cat_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Bath Cat Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bath_Dog_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Bath Dog Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Battle_Arena_text {
             get {
                 object obj = ResourceManager.GetObject("Battle_Arena_text", resourceCulture);
@@ -223,6 +243,26 @@ namespace HappyPetGame_160422035_160422041.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Clean_Bird_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Clean Bird Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Clean_Fish_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Clean Fish Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Demon_Pot_text {
             get {
                 object obj = ResourceManager.GetObject("Demon Pot_text", resourceCulture);
@@ -256,6 +296,66 @@ namespace HappyPetGame_160422035_160422041.Properties {
         internal static System.Drawing.Bitmap exit {
             get {
                 object obj = ResourceManager.GetObject("exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Feed_Bird_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Feed Bird Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Feed_Cat_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Feed Cat Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Feed_Chameleon_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Feed Chameleon Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Feed_Dog_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Feed Dog Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Feed_Fish_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Feed Fish Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Flying_Bird_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Flying Bird Animation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -433,6 +533,36 @@ namespace HappyPetGame_160422035_160422041.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Play_Bone_Cat_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Play Bone Cat Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Play_Bone_Dog_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Play Bone Dog Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Play_Cat_Animation_Blue_Marble {
+            get {
+                object obj = ResourceManager.GetObject("Play Cat Animation_Blue_Marble", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap play_click {
             get {
                 object obj = ResourceManager.GetObject("play-click", resourceCulture);
@@ -443,9 +573,39 @@ namespace HappyPetGame_160422035_160422041.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Play_Dog_Animation_Blue_Marble {
+            get {
+                object obj = ResourceManager.GetObject("Play Dog Animation_Blue_Marble", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap play_hover {
             get {
                 object obj = ResourceManager.GetObject("play-hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Play_Yarn_Cat_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Play Yarn Cat Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Play_Yarn_Dog_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Play Yarn Dog Animation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -486,6 +646,46 @@ namespace HappyPetGame_160422035_160422041.Properties {
         internal static System.Drawing.Bitmap SignUp {
             get {
                 object obj = ResourceManager.GetObject("SignUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sleep_Bird_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Sleep Bird Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sleep_Cat_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Sleep Cat Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sleep_Chameleon_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Sleep Chameleon Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sleep_Dog_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Sleep Dog Animation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -546,6 +746,36 @@ namespace HappyPetGame_160422035_160422041.Properties {
         internal static System.Drawing.Bitmap user_up {
             get {
                 object obj = ResourceManager.GetObject("user_up", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vaccinate_Bird_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Vaccinate Bird Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vaccinate_Cat_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Vaccinate Cat Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vaccinate_Dog_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Vaccinate Dog Animation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

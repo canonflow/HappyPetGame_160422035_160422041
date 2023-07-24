@@ -393,5 +393,74 @@
   <ItemGroup>
     <None Include="Resources\bg-battle-arena-menu1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bath Cat Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feed Cat Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play Bone Cat Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play Cat Animation_Blue_Marble.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play Yarn Cat Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sleep Cat Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vaccinate Cat Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clean Bird Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flying Bird Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feed Chameleon Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sleep Chameleon Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bath Dog Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feed Dog Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play Bone Dog Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play Dog Animation_Blue_Marble.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play Yarn Dog Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sleep Dog Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vaccinate Dog Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clean Fish Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feed Fish Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sleep Bird Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vaccinate Bird Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feed Bird Animation.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
