@@ -32,6 +32,8 @@
             this.lblBatleArena = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonReset = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelPoin = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.lblBatleArena)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,6 +99,30 @@
             this.buttonReset.UseVisualStyleBackColor = false;
             this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Dogica Pixel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(243, 143);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 19);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Points: ";
+            // 
+            // labelPoin
+            // 
+            this.labelPoin.AutoSize = true;
+            this.labelPoin.BackColor = System.Drawing.Color.Transparent;
+            this.labelPoin.Font = new System.Drawing.Font("Dogica Pixel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPoin.ForeColor = System.Drawing.Color.White;
+            this.labelPoin.Location = new System.Drawing.Point(385, 143);
+            this.labelPoin.Name = "labelPoin";
+            this.labelPoin.Size = new System.Drawing.Size(66, 19);
+            this.labelPoin.TabIndex = 5;
+            this.labelPoin.Text = "100";
+            // 
             // BattleArena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -105,6 +131,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(864, 461);
             this.ControlBox = false;
+            this.Controls.Add(this.labelPoin);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonReset);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblBatleArena);
@@ -128,5 +156,7 @@
         private System.Windows.Forms.PictureBox lblBatleArena;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonReset;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelPoin;
     }
 }

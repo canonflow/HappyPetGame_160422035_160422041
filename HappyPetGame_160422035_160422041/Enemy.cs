@@ -29,7 +29,7 @@ namespace HappyPetGame_160422035_160422041
         {
             this.Name = name;
             this.Picture = image;
-            this.Hp = baseHp + (GameUtils.ENEMY_HP_UPGRADE * (this.Level - 1));
+            this.Hp = baseHp + (GameUtils.ENEMY_HP_UPGRADE * (level - 1)); ;
             this.Level = level;
             if (type == 99)
             {
@@ -39,8 +39,8 @@ namespace HappyPetGame_160422035_160422041
             {
                 this.Type = type;
             }
-            this.Damage = baseDamage + (GameUtils.ENEMY_DAMAGE_UPGRADE * (this.Level - 1));
-            this.Ultimate = baseUlti + (GameUtils.ENEMY_ULTI_UPGRADE * (this.Level - 1));
+            this.Damage = baseDamage + (GameUtils.ENEMY_DAMAGE_UPGRADE * (level - 1));
+            this.Ultimate = baseUlti + (GameUtils.ENEMY_ULTI_UPGRADE * (level - 1));
         }
 
         #endregion

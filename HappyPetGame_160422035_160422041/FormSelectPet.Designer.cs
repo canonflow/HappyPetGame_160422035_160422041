@@ -54,7 +54,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Dogica Pixel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(9, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(272, 19);
             this.label1.TabIndex = 0;
@@ -63,16 +64,18 @@
             // textBoxPetName
             // 
             this.textBoxPetName.Font = new System.Drawing.Font("Dogica Pixel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPetName.Location = new System.Drawing.Point(348, 10);
+            this.textBoxPetName.Location = new System.Drawing.Point(261, 8);
+            this.textBoxPetName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxPetName.Name = "textBoxPetName";
-            this.textBoxPetName.Size = new System.Drawing.Size(292, 21);
+            this.textBoxPetName.Size = new System.Drawing.Size(220, 21);
             this.textBoxPetName.TabIndex = 1;
             this.textBoxPetName.Text = "My Pet";
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::HappyPetGame_160422035_160422041.Properties.Resources.Idle_Dog_Animation;
-            this.pictureBox5.Location = new System.Drawing.Point(1107, 72);
+            this.pictureBox5.Location = new System.Drawing.Point(830, 58);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(200, 200);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -82,7 +85,8 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::HappyPetGame_160422035_160422041.Properties.Resources.bird_idle_2001;
-            this.pictureBox4.Location = new System.Drawing.Point(839, 72);
+            this.pictureBox4.Location = new System.Drawing.Point(629, 58);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(200, 200);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -92,7 +96,8 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::HappyPetGame_160422035_160422041.Properties.Resources.Idle_Chameleon_Animation;
-            this.pictureBox3.Location = new System.Drawing.Point(561, 72);
+            this.pictureBox3.Location = new System.Drawing.Point(421, 58);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(200, 200);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -102,7 +107,8 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::HappyPetGame_160422035_160422041.Properties.Resources.Idle_Fish_Animation;
-            this.pictureBox2.Location = new System.Drawing.Point(292, 72);
+            this.pictureBox2.Location = new System.Drawing.Point(219, 58);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(200, 200);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -112,7 +118,8 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HappyPetGame_160422035_160422041.Properties.Resources.Idle_Cat_Animation;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 72);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 58);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 200);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -124,7 +131,8 @@
             this.radioButtonCat.AutoSize = true;
             this.radioButtonCat.Checked = true;
             this.radioButtonCat.Font = new System.Drawing.Font("Dogica Pixel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonCat.Location = new System.Drawing.Point(16, 293);
+            this.radioButtonCat.Location = new System.Drawing.Point(12, 238);
+            this.radioButtonCat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonCat.Name = "radioButtonCat";
             this.radioButtonCat.Size = new System.Drawing.Size(82, 23);
             this.radioButtonCat.TabIndex = 7;
@@ -137,7 +145,8 @@
             // 
             this.radioButtonFish.AutoSize = true;
             this.radioButtonFish.Font = new System.Drawing.Font("Dogica Pixel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonFish.Location = new System.Drawing.Point(292, 293);
+            this.radioButtonFish.Location = new System.Drawing.Point(219, 238);
+            this.radioButtonFish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonFish.Name = "radioButtonFish";
             this.radioButtonFish.Size = new System.Drawing.Size(98, 23);
             this.radioButtonFish.TabIndex = 8;
@@ -149,7 +158,8 @@
             // 
             this.radioButtonChameleon.AutoSize = true;
             this.radioButtonChameleon.Font = new System.Drawing.Font("Dogica Pixel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonChameleon.Location = new System.Drawing.Point(561, 293);
+            this.radioButtonChameleon.Location = new System.Drawing.Point(421, 238);
+            this.radioButtonChameleon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonChameleon.Name = "radioButtonChameleon";
             this.radioButtonChameleon.Size = new System.Drawing.Size(198, 23);
             this.radioButtonChameleon.TabIndex = 9;
@@ -161,7 +171,8 @@
             // 
             this.radioButtonBird.AutoSize = true;
             this.radioButtonBird.Font = new System.Drawing.Font("Dogica Pixel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonBird.Location = new System.Drawing.Point(839, 293);
+            this.radioButtonBird.Location = new System.Drawing.Point(629, 238);
+            this.radioButtonBird.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonBird.Name = "radioButtonBird";
             this.radioButtonBird.Size = new System.Drawing.Size(96, 23);
             this.radioButtonBird.TabIndex = 10;
@@ -173,7 +184,8 @@
             // 
             this.radioButtonDog.AutoSize = true;
             this.radioButtonDog.Font = new System.Drawing.Font("Dogica Pixel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDog.Location = new System.Drawing.Point(1107, 293);
+            this.radioButtonDog.Location = new System.Drawing.Point(830, 238);
+            this.radioButtonDog.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonDog.Name = "radioButtonDog";
             this.radioButtonDog.Size = new System.Drawing.Size(86, 23);
             this.radioButtonDog.TabIndex = 11;
@@ -183,9 +195,10 @@
             // 
             // buttonPlay
             // 
-            this.buttonPlay.Location = new System.Drawing.Point(537, 491);
+            this.buttonPlay.Location = new System.Drawing.Point(403, 399);
+            this.buttonPlay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonPlay.Name = "buttonPlay";
-            this.buttonPlay.Size = new System.Drawing.Size(181, 52);
+            this.buttonPlay.Size = new System.Drawing.Size(136, 42);
             this.buttonPlay.TabIndex = 12;
             this.buttonPlay.Text = "Let\'s Play";
             this.buttonPlay.UseVisualStyleBackColor = true;
@@ -195,7 +208,8 @@
             // 
             this.labelEnvi.AutoSize = true;
             this.labelEnvi.Font = new System.Drawing.Font("Dogica Pixel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEnvi.Location = new System.Drawing.Point(274, 376);
+            this.labelEnvi.Location = new System.Drawing.Point(206, 306);
+            this.labelEnvi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEnvi.Name = "labelEnvi";
             this.labelEnvi.Size = new System.Drawing.Size(179, 16);
             this.labelEnvi.TabIndex = 13;
@@ -211,17 +225,18 @@
             "River",
             "Sea",
             "Pond"});
-            this.comboBoxEnvironment.Location = new System.Drawing.Point(277, 418);
+            this.comboBoxEnvironment.Location = new System.Drawing.Point(208, 340);
+            this.comboBoxEnvironment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxEnvironment.Name = "comboBoxEnvironment";
-            this.comboBoxEnvironment.Size = new System.Drawing.Size(160, 23);
+            this.comboBoxEnvironment.Size = new System.Drawing.Size(121, 23);
             this.comboBoxEnvironment.TabIndex = 14;
             this.comboBoxEnvironment.Visible = false;
             // 
             // FormSelectPet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1303, 591);
+            this.ClientSize = new System.Drawing.Size(977, 480);
             this.Controls.Add(this.comboBoxEnvironment);
             this.Controls.Add(this.labelEnvi);
             this.Controls.Add(this.buttonPlay);
@@ -237,6 +252,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBoxPetName);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormSelectPet";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSelectPet";

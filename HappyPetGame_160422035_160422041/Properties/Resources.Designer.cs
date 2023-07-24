@@ -303,6 +303,16 @@ namespace HappyPetGame_160422035_160422041.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit1 {
+            get {
+                object obj = ResourceManager.GetObject("exit1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Feed_Bird_Animation {
             get {
                 object obj = ResourceManager.GetObject("Feed Bird Animation", resourceCulture);
@@ -706,6 +716,16 @@ namespace HappyPetGame_160422035_160422041.Properties {
         internal static System.Drawing.Bitmap up_2 {
             get {
                 object obj = ResourceManager.GetObject("up-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap upgrade {
+            get {
+                object obj = ResourceManager.GetObject("upgrade", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

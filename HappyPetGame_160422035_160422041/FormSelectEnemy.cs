@@ -26,6 +26,11 @@ namespace HappyPetGame_160422035_160422041
             btnFightAsimole.Size = new Size(134, 40);
             btnFightBarrel.Size = new Size(134, 40);
             btnFightDemonPot.Size = new Size(134, 40);
+            buttonUpgrade.Size = new Size(273, 55);
+            buttonUpgrade.Location = new Point(
+                    (this.ClientSize.Width - buttonUpgrade.Width) / 2,
+                    365
+                );
 
             lblSelectEnemy.Location = new Point(
                     (this.ClientSize.Width - lblSelectEnemy.Width) / 2,
@@ -60,6 +65,12 @@ namespace HappyPetGame_160422035_160422041
             FormBattle formBattle = new FormBattle();
             formBattle.Owner = this;
             formBattle.ShowDialog();
+        }
+
+        private void buttonUpgrade_Click(object sender, EventArgs e)
+        {
+            FormUpgradeBattlePet upgrade = new FormUpgradeBattlePet();
+            upgrade.ShowDialog();
         }
     }
 }

@@ -33,7 +33,7 @@ namespace HappyPetGame_160422035_160422041
             this.Coins = 100;
             this.listOfFriends = new List<Player>();
             this.ListOfRequested = new List<Player>();
-            this.PetDefenderCoins = 0;
+            this.PetDefenderCoins = 500;
             this.Points = 0;
             this.TotalWin = 0;
             this.PlayerUser = new User();

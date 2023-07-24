@@ -39,6 +39,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.buttonUpgrade = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.lblSelectEnemy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAsimole)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBarrel)).BeginInit();
@@ -189,6 +190,22 @@
             this.pictureBox6.TabIndex = 10;
             this.pictureBox6.TabStop = false;
             // 
+            // buttonUpgrade
+            // 
+            this.buttonUpgrade.BackColor = System.Drawing.Color.Transparent;
+            this.buttonUpgrade.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonUpgrade.FlatAppearance.BorderSize = 0;
+            this.buttonUpgrade.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonUpgrade.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonUpgrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUpgrade.Image = global::HappyPetGame_160422035_160422041.Properties.Resources.upgrade;
+            this.buttonUpgrade.Location = new System.Drawing.Point(288, 365);
+            this.buttonUpgrade.Name = "buttonUpgrade";
+            this.buttonUpgrade.Size = new System.Drawing.Size(273, 55);
+            this.buttonUpgrade.TabIndex = 11;
+            this.buttonUpgrade.UseVisualStyleBackColor = false;
+            this.buttonUpgrade.Click += new System.EventHandler(this.buttonUpgrade_Click);
+            // 
             // FormSelectEnemy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,6 +214,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(864, 461);
             this.ControlBox = false;
+            this.Controls.Add(this.buttonUpgrade);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -240,5 +258,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button buttonUpgrade;
     }
 }

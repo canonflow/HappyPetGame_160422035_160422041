@@ -13,7 +13,7 @@ namespace HappyPetGame_160422035_160422041
         #region CONSTRUCTOR
         public Map2Point(int size, int x, int y, Color color) : base(size, x, y)
         {
-            Picture.BackColor = Color.Purple;
+            Picture.BackColor = color;
             Picture.Tag = "map2";
         }
         #endregion

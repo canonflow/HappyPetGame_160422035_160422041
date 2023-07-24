@@ -34,9 +34,10 @@
             // 
             // buttonPlay
             // 
-            this.buttonPlay.Location = new System.Drawing.Point(338, 197);
+            this.buttonPlay.Location = new System.Drawing.Point(254, 160);
+            this.buttonPlay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonPlay.Name = "buttonPlay";
-            this.buttonPlay.Size = new System.Drawing.Size(114, 37);
+            this.buttonPlay.Size = new System.Drawing.Size(86, 30);
             this.buttonPlay.TabIndex = 0;
             this.buttonPlay.Text = "Play Game";
             this.buttonPlay.UseVisualStyleBackColor = true;
@@ -44,9 +45,10 @@
             // 
             // buttonResetGame
             // 
-            this.buttonResetGame.Location = new System.Drawing.Point(338, 303);
+            this.buttonResetGame.Location = new System.Drawing.Point(254, 246);
+            this.buttonResetGame.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonResetGame.Name = "buttonResetGame";
-            this.buttonResetGame.Size = new System.Drawing.Size(114, 33);
+            this.buttonResetGame.Size = new System.Drawing.Size(86, 27);
             this.buttonResetGame.TabIndex = 1;
             this.buttonResetGame.Text = "Reset Game";
             this.buttonResetGame.UseVisualStyleBackColor = true;
@@ -54,11 +56,13 @@
             // 
             // HappyPetHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.buttonResetGame);
             this.Controls.Add(this.buttonPlay);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "HappyPetHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Happy Pet Home";

@@ -59,9 +59,7 @@ namespace HappyPetGame_160422035_160422041
                     */
 
                     Exp exp = new Exp();
-                    this.Hide();
                     exp.ShowDialog();
-                    this.Close();
                 }
             }
             catch (Exception x)

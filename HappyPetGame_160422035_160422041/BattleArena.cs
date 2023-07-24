@@ -41,6 +41,8 @@ namespace HappyPetGame_160422035_160422041
                     16
                 );
 
+            labelPoin.Text = Auth.player().Points.ToString();
+
             //player.PlayLooping();
         }
 

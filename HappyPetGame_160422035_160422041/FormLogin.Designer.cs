@@ -38,10 +38,9 @@
             // 
             this.textBoxUsername.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBoxUsername.Font = new System.Drawing.Font("Dogica Pixel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsername.Location = new System.Drawing.Point(145, 62);
-            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxUsername.Location = new System.Drawing.Point(109, 50);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(216, 19);
+            this.textBoxUsername.Size = new System.Drawing.Size(163, 19);
             this.textBoxUsername.TabIndex = 0;
             // 
             // label1
@@ -49,8 +48,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Dogica Pixel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(141, 21);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(106, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(180, 21);
             this.label1.TabIndex = 1;
@@ -66,10 +64,9 @@
             this.buttonLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.Image = global::HappyPetGame_160422035_160422041.Properties.Resources.login;
-            this.buttonLogin.Location = new System.Drawing.Point(167, 104);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonLogin.Location = new System.Drawing.Point(125, 84);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(130, 43);
+            this.buttonLogin.Size = new System.Drawing.Size(98, 35);
             this.buttonLogin.TabIndex = 2;
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
@@ -83,27 +80,27 @@
             this.buttonSignupPage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonSignupPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSignupPage.Image = global::HappyPetGame_160422035_160422041.Properties.Resources.SignUp;
-            this.buttonSignupPage.Location = new System.Drawing.Point(145, 470);
-            this.buttonSignupPage.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSignupPage.Location = new System.Drawing.Point(109, 382);
             this.buttonSignupPage.Name = "buttonSignupPage";
-            this.buttonSignupPage.Size = new System.Drawing.Size(164, 43);
+            this.buttonSignupPage.Size = new System.Drawing.Size(123, 35);
             this.buttonSignupPage.TabIndex = 3;
             this.buttonSignupPage.UseVisualStyleBackColor = false;
             this.buttonSignupPage.Click += new System.EventHandler(this.buttonSignupPage_Click);
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HappyPetGame_160422035_160422041.Properties.Resources.bg_login;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(505, 544);
+            this.ClientSize = new System.Drawing.Size(379, 442);
             this.Controls.Add(this.buttonSignupPage);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxUsername);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

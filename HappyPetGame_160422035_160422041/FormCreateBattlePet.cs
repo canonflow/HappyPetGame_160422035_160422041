@@ -62,6 +62,7 @@ namespace HappyPetGame_160422035_160422041
             {
                 Player player = Auth.player();
                 player.BattlePet = battlePet;
+                player.PetDefenderCoins = 500;
                 Auth.UpdateCurrentPlayer(player);
 
                 //BattleArena battleArena = new BattleArena();

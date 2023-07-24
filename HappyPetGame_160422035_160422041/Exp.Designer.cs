@@ -43,8 +43,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Exp";
             this.Text = "Exp";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Exp_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Exp_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Exp_KeyUp);
             this.ResumeLayout(false);

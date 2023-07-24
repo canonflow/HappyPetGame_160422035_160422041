@@ -105,20 +105,20 @@ namespace HappyPetGame_160422035_160422041
 
                     if (GameUtils.IsMap1Point(mapValue))
                     {
-                        point = new Map1Point(GameUtils.SIZE_BOUNDARY, j, i, Color.Blue);
+                        point = new Map1Point(GameUtils.SIZE_BOUNDARY, j, i, Color.Transparent);
                         Invoke(new Action(() => point.Display(this)));
                     }
 
                     if (GameUtils.IsMap2Point(mapValue))
                     {
-                        point = new Map2Point(GameUtils.SIZE_BOUNDARY, j, i, Color.Purple);
+                        point = new Map2Point(GameUtils.SIZE_BOUNDARY, j, i, Color.Transparent);
                         Invoke(new Action(() => point.Display(this)));
                         //point.Display(this);
                     }
 
                     if (GameUtils.IsMap3Point(mapValue))
                     {
-                        point = new Map3Point(GameUtils.SIZE_BOUNDARY, j, i, Color.Orange);
+                        point = new Map3Point(GameUtils.SIZE_BOUNDARY, j, i, Color.Transparent);
                         Invoke(new Action(() => point.Display(this)));
                     }
 
@@ -473,6 +473,11 @@ namespace HappyPetGame_160422035_160422041
         protected override void OnDeactivate(EventArgs e)
         {
             soundPlayer.Stop();
+        }
+
+        private void Exp_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Auth.SignOut();
         }
     }
 }

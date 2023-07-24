@@ -106,6 +106,8 @@ namespace HappyPetGame_160422035_160422041
         public static readonly int BASE_DEMON_POT_DAMAGE = 70;
         public static readonly int BASE_DEMON_POT_ULTI = 130;
         public static readonly int BONUS_BATTLE = 50;
+        public static readonly int BASE_UPGRADE = 100;
+        public static readonly int UPGRADE_COST = 10;
         /// <summary>
         /// Dari -> Kemana
         /// </summary>

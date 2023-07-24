@@ -133,6 +133,12 @@
     <Compile Include="FormToyShop.Designer.cs">
       <DependentUpon>FormToyShop.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormUpgradeBattlePet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpgradeBattlePet.Designer.cs">
+      <DependentUpon>FormUpgradeBattlePet.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameId.cs" />
     <Compile Include="GameUtils.cs" />
     <Compile Include="HappyPetGame.cs">
@@ -212,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormToyShop.resx">
       <DependentUpon>FormToyShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpgradeBattlePet.resx">
+      <DependentUpon>FormUpgradeBattlePet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HappyPetGame.resx">
       <DependentUpon>HappyPetGame.cs</DependentUpon>
@@ -461,6 +470,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Feed Bird Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upgrade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

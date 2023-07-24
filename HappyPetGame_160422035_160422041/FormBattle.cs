@@ -62,7 +62,7 @@ namespace HappyPetGame_160422035_160422041
             this.Size = new Size(990, 570);
         }
 
-        private async void game_Tick(object sender, EventArgs e)
+        private void game_Tick(object sender, EventArgs e)
         {
             labelBattlePetHp.Text = battlePetHp.ToString();
             labelEnemyHp.Text = enemyHp.ToString();
@@ -88,7 +88,7 @@ namespace HappyPetGame_160422035_160422041
             }
             else if (enemyHp == 0)
             {
-                player.PetDefenderCoins += battlePetHp * (GameUtils.BONUS_BATTLE * battlePet.Level);
+                player.PetDefenderCoins += battlePetHp + (GameUtils.BONUS_BATTLE * battlePet.Level);
                 player.Points += battlePetHp * (30 * battlePet.Level);
                 Auth.UpdateCurrentPlayer(player);
 

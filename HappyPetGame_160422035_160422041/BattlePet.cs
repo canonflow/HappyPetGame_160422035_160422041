@@ -65,12 +65,27 @@ namespace HappyPetGame_160422035_160422041
         #endregion
 
         #region METHODS
-        public void Upgrade()
+        public void Upgrade(ref Player player)
         {
-            this.Level++;  //! +1
-            this.Ultimate += GameUtils.ULTIMATE_FOR_UPGRADE;  //! +10
-            this.Hp += GameUtils.HP_UPGRADE;
-            this.PetSkill.UpgradeLevel();
+            int cost = GameUtils.BASE_UPGRADE + (GameUtils.UPGRADE_COST * this.Level);
+
+            if (player.PetDefenderCoins - cost < 0)
+            {
+                throw new ArgumentException("Tidak punya uang. Harga Upgrade: " + cost);
+            }
+
+            if (this.Level + 1 < 50)
+            {
+                this.Level++;  //! +1
+                this.Ultimate += GameUtils.ULTIMATE_FOR_UPGRADE;  //! +10
+                this.Hp += GameUtils.HP_UPGRADE;
+                this.PetSkill.UpgradeLevel();
+                player.PetDefenderCoins -= cost;
+            }
+            else
+            {
+                throw new ArgumentException("Level sudah Mencapai MAXIMAL");
+            }
         }
 
         public string GetTypeName()
