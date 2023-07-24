@@ -33,6 +33,9 @@ namespace HappyPetGame_160422035_160422041
                 MessageBox.Show(x.Message);
             }
             */
+
+            buttonLogin.Size = new Size(130, 43);
+            buttonSignupPage.Size = new Size(164, 43);
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
@@ -47,9 +50,17 @@ namespace HappyPetGame_160422035_160422041
                 if (Auth.Login(username))
                 {
                     MessageBox.Show("Berhasil Login");
+                    textBoxUsername.Text = "";
+                    /*
                     Form1 form = new Form1();
                     this.Hide();
                     form.ShowDialog();
+                    this.Close();
+                    */
+
+                    Exp exp = new Exp();
+                    this.Hide();
+                    exp.ShowDialog();
                     this.Close();
                 }
             }
@@ -65,6 +76,11 @@ namespace HappyPetGame_160422035_160422041
             this.Hide();
             signUp.ShowDialog();
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

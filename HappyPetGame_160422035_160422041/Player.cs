@@ -16,29 +16,27 @@ namespace HappyPetGame_160422035_160422041
         //! For PET DEFENDER MODE
         private List<Player> listOfFriends;
         private List<Player> listOfRequested;
-        private int petDefenderPoint;
+        private int petDefenderCoins;
 
         private int points;
         private int totalWin;
         private User playerUser;
-        private Pet pet;
-        private BattlePet battlePet;
+        private Pet Happypet = null;
+        private BattlePet battlePet = null;
         #endregion
 
         #region CONSTRUCTOR
-        public Player(string username, Pet pet, BattlePet battlePet)
+        public Player(string username)
         {
             this.Username = username;
             this.lastPlay = DateTime.Now;
             this.Coins = 100;
             this.listOfFriends = new List<Player>();
             this.ListOfRequested = new List<Player>();
-            this.PetDefenderPoint = 0;
+            this.PetDefenderCoins = 0;
             this.Points = 0;
             this.TotalWin = 0;
-            this.PlayerUser = new User(GameUtils.USER_STARTING_POINT_BEGIN);
-            this.Pet = pet;
-            this.BattlePet = battlePet;
+            this.PlayerUser = new User();
         }
         #endregion
 
@@ -62,13 +60,13 @@ namespace HappyPetGame_160422035_160422041
         public int Coins { get => coins; set => coins = value; }
         public List<Player> ListOfFriends { get => listOfFriends; set => listOfFriends = value; }
         public List<Player> ListOfRequested { get => listOfRequested; set => listOfRequested = value; }
-        public int PetDefenderPoint { get => petDefenderPoint; set => petDefenderPoint = value; }
+        public int PetDefenderCoins { get => petDefenderCoins; set => petDefenderCoins = value; }
 
         public int Points { get => points; set => points = value; }
         public int TotalWin { get => totalWin; set => totalWin = value; }
 
         public User PlayerUser { get => playerUser; set => playerUser = value; }
-        public Pet Pet { get => pet; set => pet = value; }
+        public Pet HappyPet { get => Happypet; set => Happypet = value; }
         public BattlePet BattlePet { get => battlePet; set => battlePet = value; }
         #endregion
 

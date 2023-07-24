@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 namespace HappyPetGame_160422035_160422041
 {
+    [Serializable]
     public class BattlePet
     {
         /*!NOTES
@@ -21,7 +22,8 @@ namespace HappyPetGame_160422035_160422041
          */
         #region FIELDS
         private string name;
-        private PictureBox picture = new PictureBox();
+        //private PictureBox picture = new PictureBox();
+        private Image petImage;
         private int hp;
         private int level;
         private int type;
@@ -30,17 +32,16 @@ namespace HappyPetGame_160422035_160422041
         #endregion
 
         #region CONSTRUCTOR
-        public BattlePet()
-        {
-
-        }
         public BattlePet(string name, Image image)
         {
             this.Name = name;
+            /*
             this.Picture.Image = image;
             this.Picture.SizeMode = PictureBoxSizeMode.AutoSize;
             this.Picture.Tag = "Battle Pet";
             this.Picture.BackColor = Color.Transparent;
+            */
+            this.PetImage = image;
             //! HP: 480= x <= 520
             this.Hp = new Random().Next(480, 521);
             this.Level = 1;
@@ -54,7 +55,8 @@ namespace HappyPetGame_160422035_160422041
 
         #region PROPERTIES
         public string Name { get => name; set => name = value; }
-        public PictureBox Picture { get => picture; set => picture = value; }
+        //public PictureBox Picture { get => picture; set => picture = value; }
+        public Image PetImage { get => petImage; set => petImage = value; }
         public int Hp { get => hp; set => hp = value; }
         public int Level { get => level; set => level = value; }
         public int Type { get => type; set => type = value; }

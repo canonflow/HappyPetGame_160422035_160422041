@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace HappyPetGame_160422035_160422041
 {
+    [Serializable]
     public class Skill
     {
         #region FIELDS

@@ -40,7 +40,9 @@ namespace HappyPetGame_160422035_160422041
         public static readonly int PLAYER_MOVEMENT = 3;
         public static readonly int MARGIN_ERROR = 3;
         public static readonly Point START_BACKGROUND_LOCATION = new Point(-80, -300);
-        public static readonly Point USER_STARTING_POINT_BEGIN = new Point(200, 200);
+        public static readonly Point USER_STARTING_POINT_BEGIN = new Point(493, 259);
+        public static readonly Point USER_AFTER_HAPPY_PET = new Point(495, 280);
+        public static readonly Point USER_AFTER_BATTLE_ARENA = new Point(512, 328);
         private static Dictionary<char, Dictionary<string, bool>> keys = new Dictionary<char, Dictionary<string, bool>>
         {
             { 'W', new Dictionary<string, bool> { { "pressed", false } }  },
@@ -73,6 +75,21 @@ namespace HappyPetGame_160422035_160422041
             new Skill("Stone Crush", 4, 65),
             new Skill("Lightning Serpent", 5, 75),
             new Skill("Tsunami", 6, 80)
+        };
+        public static readonly Dictionary<char, Image> PLAYER_IDLE_IMAGES = new Dictionary<char, Image>
+        {
+            { 'W', Properties.Resources.up_2 },
+            { 'A', Properties.Resources.left_2 },
+            { 'S', Properties.Resources.down_2 },
+            { 'D', Properties.Resources.right_2 }
+        };
+
+        public static readonly Dictionary<char, Image> PLAYER_RUN_IMAGES = new Dictionary<char, Image>
+        {
+            { 'W', Properties.Resources.user_up },
+            { 'A', Properties.Resources.user_left },
+            { 'S', Properties.Resources.user_down },
+            { 'D', Properties.Resources.user_right }
         };
         public static readonly int SKILL_DAMAGE_FOR_UPGRADE = 5;
         public static readonly int ULTIMATE_FOR_UPGRADE = 10;

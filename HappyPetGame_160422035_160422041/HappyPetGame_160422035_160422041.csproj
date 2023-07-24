@@ -90,11 +90,23 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormResetGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResetGame.Designer.cs">
+      <DependentUpon>FormResetGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSelectEnemy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormSelectEnemy.Designer.cs">
       <DependentUpon>FormSelectEnemy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectPet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectPet.Designer.cs">
+      <DependentUpon>FormSelectPet.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSignUp.cs">
       <SubType>Form</SubType>
@@ -103,7 +115,32 @@
       <DependentUpon>FormSignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Auth.cs" />
+    <Compile Include="FormSelectToy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectToy.Designer.cs">
+      <DependentUpon>FormSelectToy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToyShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToyShop.Designer.cs">
+      <DependentUpon>FormToyShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameId.cs" />
     <Compile Include="GameUtils.cs" />
+    <Compile Include="HappyPetGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HappyPetGame.Designer.cs">
+      <DependentUpon>HappyPetGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HappyPetHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HappyPetHome.Designer.cs">
+      <DependentUpon>HappyPetHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,8 +192,23 @@
     <EmbeddedResource Include="FormSelectEnemy.resx">
       <DependentUpon>FormSelectEnemy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectPet.resx">
+      <DependentUpon>FormSelectPet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectToy.resx">
+      <DependentUpon>FormSelectToy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSignUp.resx">
       <DependentUpon>FormSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToyShop.resx">
+      <DependentUpon>FormToyShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HappyPetGame.resx">
+      <DependentUpon>HappyPetGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HappyPetHome.resx">
+      <DependentUpon>HappyPetHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -274,6 +326,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bird-idle-200.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_down.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_left.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_right.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_up.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg-login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idle Cat Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idle Fish Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idle Chameleon Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bird-idle-2001.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idle Dog Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yarn Toy 11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,20 +8,23 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace HappyPetGame_160422035_160422041
 {
     public partial class Exp : Form
     {
+        SoundPlayer soundPlayer = new SoundPlayer(@"music/wav/Tarrey-Town.wav");
         int currentMap = 1;
         bool render = true;
         bool run = false;
         bool change = false;
 
-        char lastPress = 'W';
+        char lastPress = 'S';
         bool move;
         List<Boundary> listOfBoundaries = new List<Boundary>();
         List<MapPoint> listOfMapPoints = new List<MapPoint>();  // !Biar loopingnya dikit
+        List<GameId> listOfGameIds = new List<GameId>();
         User user;
         Panel panel;
 
@@ -40,9 +43,10 @@ namespace HappyPetGame_160422035_160422041
             panel.Size = this.Size;
             panel.BackgroundImage = Properties.Resources.Loading;
             panel.Parent = this;
-            user = new User(new Point(420, 200));
+            user = new User();
             user.Display(this);
             panel.BringToFront();
+            //soundPlayer.PlayLooping();
         }
         public void Init()
         {
@@ -122,6 +126,21 @@ namespace HappyPetGame_160422035_160422041
                     {
                         Invoke(new Action(() => listOfMapPoints.Add(point)));
                     }
+                    
+                    if (GameUtils.IsHappyPetId(mapValue))
+                    {
+                        GameId gameId = new GameId(GameUtils.SIZE_BOUNDARY, j, i, "happy pet");
+                        Invoke(new Action(() => gameId.Display(this)));
+                        Invoke(new Action(() => listOfGameIds.Add(gameId)));
+                    }
+
+                    if (GameUtils.IsBattleArenaId(mapValue))
+                    {
+                        GameId gameId = new GameId(GameUtils.SIZE_BOUNDARY, j, i, "battle arena");
+                        Invoke(new Action(() => gameId.Display(this)));
+                        Invoke(new Action(() => listOfGameIds.Add(gameId)));
+                    }
+                    
 
                     //listBox1.Items.Add(i + " " + j);
                     //listBox1.Items.Add(map[i][j]);
@@ -152,6 +171,7 @@ namespace HappyPetGame_160422035_160422041
 
             Invoke(new Action(() => listOfBoundaries = new List<Boundary>()));
             Invoke(new Action(() => listOfMapPoints = new List<MapPoint>()));
+            Invoke(new Action(() => listOfGameIds = new List<GameId>()));
         }
 
         #region GAME TIMER
@@ -210,12 +230,14 @@ namespace HappyPetGame_160422035_160422041
                         }
                     }
                 });
-                
-
 
                 if (move)
                 {
                     user.MoveUp(GameUtils.PLAYER_MOVEMENT);
+                    if (!user.IsMove)
+                    {
+                        user.SetPlayerImage(true, lastPress);
+                    }
                 }
 
             }
@@ -227,6 +249,10 @@ namespace HappyPetGame_160422035_160422041
                 if (move)
                 {
                     user.MoveLeft(GameUtils.PLAYER_MOVEMENT);
+                    if (!user.IsMove)
+                    {
+                        user.SetPlayerImage(true, lastPress);
+                    }
                 }
 
             }
@@ -238,6 +264,10 @@ namespace HappyPetGame_160422035_160422041
                 if (move)
                 {
                     user.MoveDown(GameUtils.PLAYER_MOVEMENT);
+                    if (!user.IsMove)
+                    {
+                        user.SetPlayerImage(true, lastPress);
+                    }
                 }
 
             }
@@ -249,6 +279,10 @@ namespace HappyPetGame_160422035_160422041
                 if (move)
                 {
                     user.MoveRight(GameUtils.PLAYER_MOVEMENT);
+                    if (!user.IsMove)
+                    {
+                        user.SetPlayerImage(true, lastPress);
+                    }
                 }
 
             }
@@ -330,6 +364,27 @@ namespace HappyPetGame_160422035_160422041
                 }
             }
             #endregion
+
+            #region GAMES
+            foreach (GameId gameId in listOfGameIds)
+            {
+                if ((string)gameId.Picture.Tag == "happy pet" && user.Picture.Bounds.IntersectsWith(gameId.Picture.Bounds))
+                {
+                    user.Picture.Location = GameUtils.USER_AFTER_BATTLE_ARENA;
+                    user.Picture.Image = GameUtils.PLAYER_IDLE_IMAGES[lastPress];
+                    //! Sementara
+                    HappyPetHome happyPetHome = new HappyPetHome();
+                    happyPetHome.ShowDialog();
+                }
+                else if ((string)gameId.Picture.Tag == "battle arena" && user.Picture.Bounds.IntersectsWith(gameId.Picture.Bounds))
+                {
+                    user.Picture.Location = GameUtils.USER_AFTER_BATTLE_ARENA;
+                    user.Picture.Image = GameUtils.PLAYER_IDLE_IMAGES[lastPress];
+                    BattleArena battleArena = new BattleArena();
+                    battleArena.ShowDialog();
+                }
+            }
+            #endregion
         }
         #endregion
 
@@ -369,24 +424,28 @@ namespace HappyPetGame_160422035_160422041
                     {
                         keys['W']["pressed"] = false;
                     }
+                    user.SetPlayerImage(false, lastPress);
                     break;
                 case Keys.A:
                     if (move && lastPress == 'A')
                     {
                         keys['A']["pressed"] = false;
                     }
+                    user.SetPlayerImage(false, lastPress);
                     break;
                 case Keys.S:
                     if (move && lastPress == 'S')
                     {
                         keys['S']["pressed"] = false;
                     }
+                    user.SetPlayerImage(false, lastPress);
                     break;
                 case Keys.D:
                     if (move && lastPress == 'D')
                     {
                         keys['D']["pressed"] = false;
                     }
+                    user.SetPlayerImage(false, lastPress);
                     break;
             }
         }
@@ -405,5 +464,15 @@ namespace HappyPetGame_160422035_160422041
             }
         }
         #endregion
+
+        protected override void OnActivated(EventArgs e)
+        {
+            soundPlayer.PlayLooping();
+        }
+
+        protected override void OnDeactivate(EventArgs e)
+        {
+            soundPlayer.Stop();
+        }
     }
 }

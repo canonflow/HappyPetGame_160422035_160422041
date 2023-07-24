@@ -16,7 +16,7 @@ namespace HappyPetGame_160422035_160422041
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BattleArena());
+            Application.Run(new FormLogin());
         }
     }
 }

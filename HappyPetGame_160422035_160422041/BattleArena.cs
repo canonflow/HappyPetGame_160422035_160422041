@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace HappyPetGame_160422035_160422041
 {
     public partial class BattleArena : Form
     {
+        SoundPlayer player = new SoundPlayer(@"music/wav/Sinnoh-Frontier-Brain.wav");
         public BattleArena()
         {
             InitializeComponent();
@@ -32,6 +34,8 @@ namespace HappyPetGame_160422035_160422041
                     (this.ClientSize.Width - lblBatleArena.Width)/2,
                     16
                 );
+
+            //player.PlayLooping();
         }
 
         private void btnPlay_MouseEnter(object sender, EventArgs e)
@@ -60,7 +64,13 @@ namespace HappyPetGame_160422035_160422041
 
         private void button1_Click(object sender, EventArgs e)
         {
+            player.Stop();
             this.Close();
+        }
+
+        protected override void OnActivated(EventArgs e)
+        {
+            player.PlayLooping();
         }
     }
 }

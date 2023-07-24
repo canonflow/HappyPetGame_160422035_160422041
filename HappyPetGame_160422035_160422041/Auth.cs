@@ -103,12 +103,12 @@ namespace HappyPetGame_160422035_160422041
         {
             for (int cnt = 0; cnt < listPlayers.Count; cnt++)
             {
-                if (listPlayers[cnt].Username == currentPlayer.Username)
+                if (listPlayers[cnt].Username == currPlayer.Username)
                 {
-                    listPlayers[cnt] = currentPlayer;
+                    listPlayers[cnt] = currPlayer;
                 }
             }
-
+            currentPlayer = currPlayer;
             SaveData();
         }
 
@@ -139,7 +139,7 @@ namespace HappyPetGame_160422035_160422041
             }
 
             //! Create new Player and add it to listOfPlayer in form signUp
-            Player newPlayer = new Player(username, new Cat(), new BattlePet());
+            Player newPlayer = new Player(username);
             //form.listOfPlayers.Add(newPlayer);
             listPlayers.Add(newPlayer);
 

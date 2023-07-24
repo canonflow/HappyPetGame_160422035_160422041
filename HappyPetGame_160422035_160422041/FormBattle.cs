@@ -44,7 +44,7 @@ namespace HappyPetGame_160422035_160422041
             enemy = formSelectEnemy.enemy;
             battlePet = formSelectEnemy.battlePet;
             pictureBoxEnemy.Image = formSelectEnemy.enemy.Picture.Image;
-            pictureBoxBattlePet.Image = formSelectEnemy.battlePet.Picture.Image;
+            pictureBoxBattlePet.Image = formSelectEnemy.battlePet.PetImage;
 
             battlePetHp = battlePet.Hp;
             enemyHp = enemy.Hp;
@@ -53,6 +53,10 @@ namespace HappyPetGame_160422035_160422041
             panelAttack.Visible = false;
 
             buttonUltimate.Enabled = false;
+
+            this.KeyPreview = true;  // !Agar tetap dapat menerima input dari keyboard meskipun terdapat Control yang focus
+            this.Text = this.Size.Width + "," + this.Size.Height;
+            this.Size = new Size(990, 570);
         }
 
         private async void game_Tick(object sender, EventArgs e)
@@ -73,6 +77,10 @@ namespace HappyPetGame_160422035_160422041
                 panelBTK.Enabled = false;
                 panelBTK.Visible = false;
                 game.Enabled = false;
+                Player player = Auth.player();
+                player.Points += battlePetHp;
+                player.Coins += (int)(battlePetHp + (0.4 * enemy.Hp));
+                Auth.UpdateCurrentPlayer(player);
                 return;
             }
             else if (enemyHp == 0)
@@ -526,6 +534,27 @@ namespace HappyPetGame_160422035_160422041
                 
             }
             #endregion
+        }
+
+        private void FormBattle_KeyDown(object sender, KeyEventArgs e)
+        {
+            game.Stop();
+            if (e.KeyCode == Keys.Escape)
+            {
+                DialogResult res = MessageBox.Show(
+                        "Yakin? Kamu nggak bakal dapet point lhoo",
+                        ":(",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question
+                    );
+
+                if (res == DialogResult.Yes)
+                {
+                    this.Close();
+                    return;
+                }
+                game.Start();
+            }
         }
 
         private string IsWin(string userChoice, string enemyChoice)

@@ -1,6 +1,6 @@
 ﻿namespace HappyPetGame_160422035_160422041
 {
-    partial class Map2
+    partial class FormResetGame
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Map2
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Map2";
-            this.Text = "Map2";
-            this.Load += new System.EventHandler(this.Map2_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Map2_KeyDown);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Map2_KeyUp);
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "FormResetGame";
         }
 
         #endregion
