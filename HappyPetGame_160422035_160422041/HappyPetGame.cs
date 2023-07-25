@@ -55,27 +55,37 @@ namespace HappyPetGame_160422035_160422041
                 buttonSleep.Enabled = true;
                 buttonVaccinate.Enabled = true;
                 buttonClean.Enabled = false;
+                buttonClean.Visible = false;
                 labelTambahan.Text = "Vaccination Status: " + ((cat.VaccinateStatus) ? "Yes" : "No");
             }
             else if (player.HappyPet is Fish)
             {
                 Fish fish = player.HappyPet as Fish;
                 buttonPlay.Enabled = false;
+                buttonPlay.Visible = false;
                 buttonBath.Enabled = false;
+                buttonBath.Visible = false;
                 buttonFeed.Enabled = true;
                 buttonVaccinate.Enabled = false;
+                buttonVaccinate.Visible = false;
                 buttonClean.Enabled = true;
                 buttonSleep.Enabled = false;
+                buttonSleep.Visible = false;
                 labelTambahan.Text = "Environment: " + fish.Environment;
             }
             else if (player.HappyPet is Chameleon)
             {
                 Chameleon chameleon = player.HappyPet as Chameleon;
                 buttonPlay.Enabled = false;
+                buttonPlay.Visible = false;
+                buttonBath.Visible = false;
                 buttonBath.Enabled = false;
+                buttonBath.Visible = false;
                 buttonFeed.Enabled = true;
                 buttonVaccinate.Enabled = false;
+                buttonVaccinate.Visible = false;
                 buttonClean.Enabled = false;
+                buttonClean.Visible = false;
                 buttonSleep.Enabled = true;
                 labelTambahan.Text = "Current Color: " + chameleon.CurrentColor;
             }
@@ -84,6 +94,7 @@ namespace HappyPetGame_160422035_160422041
                 Bird bird = player.HappyPet as Bird;
                 buttonPlay.Enabled = true;
                 buttonBath.Enabled = false;
+                buttonBath.Visible = false;
                 buttonFeed.Enabled = true;
                 buttonVaccinate.Enabled = true;
                 buttonClean.Enabled = true;
@@ -98,6 +109,7 @@ namespace HappyPetGame_160422035_160422041
                 buttonFeed.Enabled = true;
                 buttonVaccinate.Enabled = true;
                 buttonClean.Enabled = false;
+                buttonClean.Visible = false;
                 buttonSleep.Enabled = true;
                 labelTambahan.Text = "Vaccination Status: " + ((dog.VaccinateStatus) ? "Yes" : "No");
             }

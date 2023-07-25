@@ -62,6 +62,9 @@ namespace HappyPetGame_160422035_160422041
             this.KeyPreview = true;  // !Agar tetap dapat menerima input dari keyboard meskipun terdapat Control yang focus
             this.Text = this.Size.Width + "," + this.Size.Height;
             this.Size = new Size(990, 570);
+
+            labelCoin.Text = "Coin: " + player.PetDefenderCoins;
+            labelPoint.Text = "Point: " + player.Points;
         }
 
         private void game_Tick(object sender, EventArgs e)

@@ -52,6 +52,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.labelCoin = new System.Windows.Forms.Label();
+            this.labelPoint = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBattlePet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnemy)).BeginInit();
             this.panelBTK.SuspendLayout();
@@ -142,7 +144,7 @@
             this.labelCount.Location = new System.Drawing.Point(558, 32);
             this.labelCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCount.Name = "labelCount";
-            this.labelCount.Size = new System.Drawing.Size(153, 21);
+            this.labelCount.Size = new System.Drawing.Size(199, 27);
             this.labelCount.TabIndex = 3;
             this.labelCount.Text = "Count: 5";
             // 
@@ -154,7 +156,7 @@
             this.labelUserChoice.Location = new System.Drawing.Point(45, 32);
             this.labelUserChoice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUserChoice.Name = "labelUserChoice";
-            this.labelUserChoice.Size = new System.Drawing.Size(0, 27);
+            this.labelUserChoice.Size = new System.Drawing.Size(0, 34);
             this.labelUserChoice.TabIndex = 4;
             // 
             // labelEnemyChoice
@@ -165,7 +167,7 @@
             this.labelEnemyChoice.Location = new System.Drawing.Point(1065, 32);
             this.labelEnemyChoice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelEnemyChoice.Name = "labelEnemyChoice";
-            this.labelEnemyChoice.Size = new System.Drawing.Size(0, 27);
+            this.labelEnemyChoice.Size = new System.Drawing.Size(0, 34);
             this.labelEnemyChoice.TabIndex = 5;
             // 
             // labelKeputusan
@@ -176,7 +178,7 @@
             this.labelKeputusan.Location = new System.Drawing.Point(524, 148);
             this.labelKeputusan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelKeputusan.Name = "labelKeputusan";
-            this.labelKeputusan.Size = new System.Drawing.Size(0, 35);
+            this.labelKeputusan.Size = new System.Drawing.Size(0, 43);
             this.labelKeputusan.TabIndex = 6;
             // 
             // labelBattlePetHp
@@ -187,7 +189,7 @@
             this.labelBattlePetHp.Location = new System.Drawing.Point(83, 148);
             this.labelBattlePetHp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelBattlePetHp.Name = "labelBattlePetHp";
-            this.labelBattlePetHp.Size = new System.Drawing.Size(0, 37);
+            this.labelBattlePetHp.Size = new System.Drawing.Size(0, 47);
             this.labelBattlePetHp.TabIndex = 7;
             // 
             // labelEnemyHp
@@ -198,7 +200,7 @@
             this.labelEnemyHp.Location = new System.Drawing.Point(1055, 148);
             this.labelEnemyHp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelEnemyHp.Name = "labelEnemyHp";
-            this.labelEnemyHp.Size = new System.Drawing.Size(0, 37);
+            this.labelEnemyHp.Size = new System.Drawing.Size(0, 47);
             this.labelEnemyHp.TabIndex = 8;
             // 
             // panelAttack
@@ -249,7 +251,7 @@
             this.labelHasilAkhir.Location = new System.Drawing.Point(327, 32);
             this.labelHasilAkhir.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelHasilAkhir.Name = "labelHasilAkhir";
-            this.labelHasilAkhir.Size = new System.Drawing.Size(0, 48);
+            this.labelHasilAkhir.Size = new System.Drawing.Size(0, 59);
             this.labelHasilAkhir.TabIndex = 10;
             // 
             // labelBattlePetUltimate
@@ -260,7 +262,7 @@
             this.labelBattlePetUltimate.Location = new System.Drawing.Point(59, 261);
             this.labelBattlePetUltimate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelBattlePetUltimate.Name = "labelBattlePetUltimate";
-            this.labelBattlePetUltimate.Size = new System.Drawing.Size(0, 21);
+            this.labelBattlePetUltimate.Size = new System.Drawing.Size(0, 27);
             this.labelBattlePetUltimate.TabIndex = 11;
             // 
             // labelEnemyUltimate
@@ -271,7 +273,7 @@
             this.labelEnemyUltimate.Location = new System.Drawing.Point(969, 261);
             this.labelEnemyUltimate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelEnemyUltimate.Name = "labelEnemyUltimate";
-            this.labelEnemyUltimate.Size = new System.Drawing.Size(0, 21);
+            this.labelEnemyUltimate.Size = new System.Drawing.Size(0, 27);
             this.labelEnemyUltimate.TabIndex = 12;
             // 
             // label1
@@ -281,7 +283,7 @@
             this.label1.Font = new System.Drawing.Font("Dogica Pixel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(484, 528);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 19);
+            this.label1.Size = new System.Drawing.Size(112, 24);
             this.label1.TabIndex = 13;
             this.label1.Text = "Press";
             // 
@@ -292,7 +294,7 @@
             this.label2.Font = new System.Drawing.Font("Dogica Pixel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(599, 528);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 19);
+            this.label2.Size = new System.Drawing.Size(82, 24);
             this.label2.TabIndex = 14;
             this.label2.Text = "ESC";
             // 
@@ -303,9 +305,29 @@
             this.label3.Font = new System.Drawing.Font("Dogica Pixel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(686, 528);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(129, 19);
+            this.label3.Size = new System.Drawing.Size(160, 24);
             this.label3.TabIndex = 15;
             this.label3.Text = "to leave";
+            // 
+            // labelCoin
+            // 
+            this.labelCoin.AutoSize = true;
+            this.labelCoin.Font = new System.Drawing.Font("Dogica Pixel", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCoin.Location = new System.Drawing.Point(42, 577);
+            this.labelCoin.Name = "labelCoin";
+            this.labelCoin.Size = new System.Drawing.Size(79, 13);
+            this.labelCoin.TabIndex = 16;
+            this.labelCoin.Text = "label4";
+            // 
+            // labelPoint
+            // 
+            this.labelPoint.AutoSize = true;
+            this.labelPoint.Font = new System.Drawing.Font("Dogica Pixel", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPoint.Location = new System.Drawing.Point(42, 616);
+            this.labelPoint.Name = "labelPoint";
+            this.labelPoint.Size = new System.Drawing.Size(79, 13);
+            this.labelPoint.TabIndex = 17;
+            this.labelPoint.Text = "label4";
             // 
             // FormBattle
             // 
@@ -315,6 +337,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1312, 690);
             this.ControlBox = false;
+            this.Controls.Add(this.labelPoint);
+            this.Controls.Add(this.labelCoin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -373,5 +397,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelCoin;
+        private System.Windows.Forms.Label labelPoint;
     }
 }
